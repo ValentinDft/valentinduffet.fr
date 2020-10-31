@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar,NavItem,NavLink, Nav } from 'reactstrap';
-import '../navbar.css';
+import '../style/navbar.css';
 
 function NavbarTop() {
     return (
