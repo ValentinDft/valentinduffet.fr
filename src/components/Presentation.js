@@ -27,11 +27,15 @@ function Presentation() {
                             <span style={{color: "#c23616"}}> formation de développeur web fullstack Javascript à La Capsule.</span></h4>
                     </Animated> 
                 </Col>
+            </Row>
+            <Row>
                 <Col sm="12">
                     <h1 style={{textAlign: "center"}}>Valentin Duffet</h1>
                     <h3 style={{textAlign: "center", color: "#636e72"}}>Développeur Web fullstack Javascript <FontAwesomeIcon icon={faJs} style={{color: "#c23616"}}/> </h3>
                 </Col>
             </Row>
+                
+            
         </Container> 
     );
   }

@@ -5,6 +5,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faUniversity } from '@fortawesome/free-solid-svg-icons'
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import { faJava } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
+import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+import { faJs } from '@fortawesome/free-brands-svg-icons'
+import { faPhp } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
+import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Timeline } from 'antd';
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,36 +32,54 @@ function Education() {
             <Row>
                 <Col>
                     <Timeline mode="alternate">
-                        <Col> 
-                            <div data-aos="fade-up">
+                        <Col sm="12" md="12" lg="12"> 
+                            <div data-aos="fade-left">
                                 <Timeline.Item>
                                     <div className="block">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
-                                        <h6 className="block"><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
-                                        <h4 className="block">Lycée Polyvalent Astier - Aubenas 07200</h4>
-                                        <h5 className="block">Baccalauréat ELEEC, mention assez bien</h5>
-                                        <h6 className="block">ELectrotechnique Energie Equipement Communicant</h6>
+                                        <h6><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
+                                        <h4><FontAwesomeIcon icon={faRocket} style={{fontSize: "20px"}}></FontAwesomeIcon> La Capsule Academy - Lyon</h4>
+                                        <h5>Formation développeur web fullstack Javascript</h5>
+                                        <h6>
+                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> React JS
+                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> React Native 
+                                            & Redux 
+                                            <FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px"}}></FontAwesomeIcon> Node JS 
+                                            & Express & MongoDB 
+                                            <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px"}}></FontAwesomeIcon> Boostrap
+                                            <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px"}}></FontAwesomeIcon> Git
+                                        </h6>
                                     </div>
                                 </Timeline.Item>
                             </div>
                         </Col>
-                        <Col> 
-                            <div data-aos="fade-up">
+                        <Col sm="12" md="12" lg="12"> 
+                            <div data-aos="fade-right">
                                 <Timeline.Item>
                                     <div className="block">
-                                        <h6><small class="far fa-clock"> 2013 - 2016</small> </h6>
+                                        <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
+                                        <h6>
+                                            <FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2017 - 2019
+                                        </h6>
                                         <h4>Lycée Polyvalent Astier - Aubenas 07200</h4>
-                                        <h5>Baccalauréat ELEEC, mention assez bien</h5>
-                                        <h6>ELectrotechnique Energie Equipement Communicant</h6>
+                                        <h5>BTS SNIR (Systèmes Numériques informatique et Réseaux), admis</h5>
+                                        <h6>
+                                            <FontAwesomeIcon icon={faJava} style={{fontSize: "25px"}}></FontAwesomeIcon> Java 
+                                            <FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px"}}></FontAwesomeIcon> HTML 
+                                            <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px"}}></FontAwesomeIcon> CSS
+                                            <FontAwesomeIcon icon={faJs} style={{fontSize: "25px"}}></FontAwesomeIcon> Javascript
+                                            <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px"}}></FontAwesomeIcon> Php
+                                            & MySql & infrastuctures réseaux</h6>
                                     </div>
                                 </Timeline.Item>
                             </div>
                         </Col>
-                        <Col> 
-                            <div data-aos="fade-up">
+                        <Col sm="12" md="12" lg="12"> 
+                            <div data-aos="fade-left">
                                 <Timeline.Item>
                                     <div className="block">
-                                        <h6><small class="far fa-clock"> 2013 - 2016</small> </h6>
+                                        <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
+                                        <h6><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
                                         <h4>Lycée Polyvalent Astier - Aubenas 07200</h4>
                                         <h5>Baccalauréat ELEEC, mention assez bien</h5>
                                         <h6>ELectrotechnique Energie Equipement Communicant</h6>
