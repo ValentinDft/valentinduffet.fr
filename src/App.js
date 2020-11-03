@@ -20,9 +20,7 @@ function App() {
 
       <Presentation/>
 
-    <div data-aos="flip-up">
       <Education/>
-    </div>
       
         
        
