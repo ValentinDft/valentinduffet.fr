@@ -9,13 +9,48 @@ body{
     background-attachment: fixed;
 }
 
-.block{
+.block-education-right{
     width: auto;
     height: auto;
     text-align: center;
-    background-color: #c23616;
+    background-color: #dff9fb;
     border-radius: 20px;
+    border: 5px solid #c23616;
     margin-right: 30px;
     margin-left: 30px;
     padding: 10px;
+}
+
+.block-education-right::before{
+    content: "";
+    position: fixed;
+    right: 95%;
+    top: 20px;
+    border-top: 20px solid transparent;
+    border-right: 30px solid #dff9fb;
+    border-bottom: 20px solid transparent;
+    
+}
+
+.block-education-left{
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #dff9fb;
+    border-radius: 20px;
+    border: 5px solid #c23616;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.block-education-left::before{
+    content: "";
+    position: fixed;
+    left: 95%;
+    top: 20px;
+    border-top: 25px solid transparent;
+    border-left: 30px solid #dff9fb;
+    border-bottom: 25px solid transparent;
+    
 }
