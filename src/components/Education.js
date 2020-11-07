@@ -33,8 +33,8 @@ function Education() {
                 <Col>
                     <Timeline mode="alternate">
                         <Col sm="12" md="12" lg="12"> 
-                            <div data-aos="fade-left">
-                                <Timeline.Item>
+                            <Timeline.Item>
+                                <div data-aos="fade-left">
                                     <div className="block">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
@@ -50,12 +50,12 @@ function Education() {
                                             <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px"}}></FontAwesomeIcon> Git
                                         </h6>
                                     </div>
-                                </Timeline.Item>
-                            </div>
+                                </div>
+                            </Timeline.Item>
                         </Col>
                         <Col sm="12" md="12" lg="12"> 
-                            <div data-aos="fade-right">
-                                <Timeline.Item>
+                            <Timeline.Item>
+                                <div data-aos="fade-right">
                                     <div className="block">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6>
@@ -71,12 +71,12 @@ function Education() {
                                             <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px"}}></FontAwesomeIcon> Php
                                             & MySql & infrastuctures réseaux</h6>
                                     </div>
-                                </Timeline.Item>
-                            </div>
+                                </div>
+                            </Timeline.Item>
                         </Col>
                         <Col sm="12" md="12" lg="12"> 
-                            <div data-aos="fade-left">
-                                <Timeline.Item>
+                            <Timeline.Item>
+                                <div data-aos="fade-left">
                                     <div className="block">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
@@ -84,8 +84,8 @@ function Education() {
                                         <h5>Baccalauréat ELEEC, mention assez bien</h5>
                                         <h6>ELectrotechnique Energie Equipement Communicant</h6>
                                     </div>
-                                </Timeline.Item>
-                            </div>
+                                </div>
+                            </Timeline.Item>
                         </Col>
                         
                     </Timeline>
