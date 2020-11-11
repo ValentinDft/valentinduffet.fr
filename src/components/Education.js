@@ -34,7 +34,7 @@ function Education() {
                     <Timeline mode="alternate">
                         <Col sm="12" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-up" data-aos-duration="1000">
+                                <div data-aos="zoom-in-left" data-aos-duration="1500">
                                     <div className="block-education-right">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
@@ -52,7 +52,7 @@ function Education() {
                         </Col>
                         <Col sm="12" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-up" data-aos-duration="1500">
+                                <div data-aos="zoom-in-right" data-aos-duration="1500">
                                     <div className="block-education-left">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}>
@@ -69,7 +69,7 @@ function Education() {
                         </Col>
                         <Col sm="12" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-up" data-aos-duration="1500">
+                                <div data-aos="zoom-in-left" data-aos-duration="1500">
                                     <div className="block-education-right">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
