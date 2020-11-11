@@ -41,10 +41,11 @@ function Education() {
                                         <h4><FontAwesomeIcon icon={faRocket} style={{fontSize: "20px"}}></FontAwesomeIcon> La Capsule Academy - Lyon</h4>
                                         <h5 style={{color: "#c23616"}}>Formation développeur web fullstack Javascript</h5>
                                         <h6>
-                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> React JS <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> React Native 
-                                            & Redux <FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px"}}></FontAwesomeIcon> Node JS 
-                                            / Express & MongoDB <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px"}}></FontAwesomeIcon> Boostrap
-                                            <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px"}}></FontAwesomeIcon> Git
+                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            React JS <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            React Native & Redux <FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            Node JS / Express & MongoDB <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            Boostrap <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px"}}></FontAwesomeIcon> Git
                                         </h6>
                                     </div>
                                 </div>
@@ -61,8 +62,12 @@ function Education() {
                                         <h4>Lycée Polyvalent Astier - Aubenas 07200</h4>
                                         <h5 style={{color: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux), admis</h5>
                                         <h6>
-                                            <FontAwesomeIcon icon={faJava} style={{fontSize: "25px"}}></FontAwesomeIcon> Java <FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px"}}></FontAwesomeIcon> HTML <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px"}}></FontAwesomeIcon> CSS <FontAwesomeIcon icon={faJs} style={{fontSize: "25px"}}></FontAwesomeIcon> Javascript <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px"}}></FontAwesomeIcon> Php
-                                            & MySql & infrastuctures réseaux</h6>
+                                            <FontAwesomeIcon icon={faJava} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            Java <FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            HTML <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            CSS <FontAwesomeIcon icon={faJs} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            Javascript <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                            Php & MySql & infrastuctures réseaux</h6>
                                     </div>
                                 </div>
                             </Timeline.Item>

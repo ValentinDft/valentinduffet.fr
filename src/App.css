@@ -63,3 +63,14 @@ body{
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (max-width:768px){
+	
+    .img
+    {
+        margin-left: 0;
+        margin-right: 0;
+        width: 350px !important;
+        margin-bottom: 10% !important;
+    }
+}

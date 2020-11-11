@@ -14,7 +14,7 @@ function Presentation() {
             <Container fluid={true}>
                 <Row>
                     <Col sm="12" md="12" lg="12">   
-                        <CardImg src={imgCard} style={{marginTop: "3%", marginBottom: "5%", borderRadius: "5%", width: "450px", display: "block", marginLeft: "auto", marginRight: "auto"}}/>
+                        <CardImg src={imgCard} style={{marginTop: "3%", marginBottom: "5%", borderRadius: "5%", width: "450px", display: "block", marginLeft: "auto", marginRight: "auto"}} className="img"/>
                     </Col>
                 </Row>
                 <Row>
@@ -26,7 +26,7 @@ function Presentation() {
                     </Col>
                 </Row>
             </Container> 
-            <Container style={{marginTop: "5%"}}>
+            <Container style={{marginTop: "5%"}} className="container">
                 <Row>
                     <Col sm="12" md="12" lg="12">
                         <div data-aos="fade-up" data-aos-duration="1500">
