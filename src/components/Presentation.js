@@ -3,6 +3,8 @@ import { Col, CardImg, Container, Row } from 'reactstrap';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJs } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import {Animated} from "react-animated-css";
 import imgCard from '../IMG_5395.jpg';
 import AOS from "aos";
@@ -18,14 +20,17 @@ function Presentation() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm="12">
+                    <Col sm="12" style={{textAlign: "center"}}>
                         <Animated animationIn="slideInUp" animationInDuration="1500" isVisible={true}>
-                            <h1 style={{textAlign: "center", color: "#dff9fb"}}>Valentin Duffet</h1>
-                            <h3 style={{textAlign: "center", color: "#c23616"}}>Développeur Web fullstack Javascript <FontAwesomeIcon icon={faJs} style={{color: "#dff9fb"}}/> </h3>
+                            <h1 style={{color: "#dff9fb"}}>Valentin Duffet</h1>
+                            <h3 style={{color: "#c23616"}}>Développeur Web fullstack Javascript <FontAwesomeIcon icon={faJs} style={{color: "#dff9fb"}}/> </h3>
+                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                            <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                         </Animated>
                     </Col>
                 </Row>
             </Container> 
+
             <Container style={{marginTop: "5%"}} className="container">
                 <Row>
                     <Col sm="12" md="12" lg="12">

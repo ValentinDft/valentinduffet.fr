@@ -32,7 +32,7 @@ function Competences() {
                             <CardImg src={logoFront} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}}/>
                         </Col> 
                         <Col sm="12" md="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                            <div data-aos="fade-down" data-aos-duration="1500">
+                            <div data-aos="fade-down" data-aos-duration="1000">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
                                     Html <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
@@ -41,7 +41,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Frameworks et outils: </h4>
                                 <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
-                                    React JS <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
+                                    React JS/Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
                                     Bootstrap & Ant-design
                                 </h5>
                             </div>
@@ -54,7 +54,7 @@ function Competences() {
                 <Col className="block-competences" style={{marginTop: "15px"}}>
                     <Row>
                         <Col sm="12" md="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}}>
-                            <div data-aos="fade-up" data-aos-duration="1500">
+                            <div data-aos="fade-up" data-aos-duration="1000">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
                                     Javascript & <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
