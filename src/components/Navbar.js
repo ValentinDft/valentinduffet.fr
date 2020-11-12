@@ -18,15 +18,13 @@ function NavbarTop() {
                     <NavItem>
                         <NavLink>Compétences</NavLink>  
                     </NavItem>
-                </Animated><Animated animationIn="bounceInDown" animationInDuration="1500" isVisible={true}>
+                </Animated>
+                <Animated animationIn="bounceInDown" animationInDuration="1500" isVisible={true}>
                     <NavItem>
-                        <NavLink>Expèriences</NavLink>  
+                        <NavLink>Portfolio</NavLink>  
                     </NavItem>
-                </Animated><Animated animationIn="bounceInDown" animationInDuration="1500" isVisible={true}>
-                    <NavItem>
-                        <NavLink>Mes Réalisations</NavLink>  
-                    </NavItem>
-                </Animated><Animated animationIn="bounceInDown" animationInDuration="1500" isVisible={true}>
+                </Animated>
+                <Animated animationIn="bounceInDown" animationInDuration="1500" isVisible={true}>
                     <NavItem>
                         <NavLink>Contact</NavLink>  
                     </NavItem>

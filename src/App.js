@@ -3,6 +3,7 @@ import NavbarTop from'./components/Navbar';
 import Presentation from'./components/Presentation';
 import Education from'./components/Education';
 import Competences from'./components/Competences';
+import Portfolio from'./components/Portfolio';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -25,7 +26,7 @@ function App() {
       
       <Competences/>
        
-      
+      <Portfolio/>
     </div>
   );
 }
