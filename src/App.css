@@ -43,7 +43,7 @@ body{
     margin-right: 30px;
     margin-left: 30px;
     padding: 10px;
-    box-shadow: -10px 10px rgba(0, 0, 0, .2);;
+    box-shadow: -10px 10px rgba(0, 0, 0, .2);
 }
 
 .block-education-left::before{
@@ -66,11 +66,15 @@ body{
     text-align: center;
 }
 
+.block-competences:hover{
+    box-shadow: 5px 5px rgba(228, 225, 225, .2);
+}
+
 .block-portfolio{
     width: auto;
     height: auto;
     background-color: #f5f6fa;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 

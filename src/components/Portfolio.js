@@ -1,9 +1,16 @@
 import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import '../App.css';
+import logo from "../captureMassageShakti.png"
+import { Card, Tag } from 'antd';
+
+
+// Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+// Import Material UI
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -13,6 +20,9 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
+const { Meta } = Card;
+
+// -------------------------------------- Fonction pour le tab material UI ----------------------------------------------
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
@@ -46,6 +56,7 @@ function a11yProps(index) {
     };
 }
 
+// -----------------constante de style du tab --------------------
 const useStyles = makeStyles((theme) => ({
     root: {
       backgroundColor: "theme.palette.background.paper",
@@ -66,6 +77,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
 }));
+
 
 function Portfolio() {
     const classes = useStyles();
@@ -114,10 +126,30 @@ function Portfolio() {
                         style={{padding: "0px"}}
                     >
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
-                            <div className="block-portfolio">Html</div>
+                            <div className="block-portfolio">
+                                <Card style={{ width: 300 }} hoverable
+                                    cover={
+                                    <img
+                                        alt="Massage Shakti Ardèche"
+                                        src={logo}
+                                    />
+                                    }
+                                    actions={[
+                                        <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank">
+                                            <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#c23616"}}></FontAwesomeIcon>
+                                        </a>   
+                                    ]}
+                                >
+                                    <Meta
+                                        title="Massage Shakti Ardèche"
+                                        description={[<Tag color="default">Html/Css</Tag>, <Tag color="default">Bootstrap</Tag>]}
+                                        
+                                    />
+                                </Card>
+                            </div>
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
-                            <div className="block-portfolio">React</div>
+                            <div className="block-portfolio">ça arrive...</div>
                         </TabPanel>
                     </SwipeableViews>
                 </Col>
