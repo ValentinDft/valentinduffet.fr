@@ -1,8 +1,8 @@
 import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import '../App.css';
-import logo from "../captureMassageShakti.png"
-import { Card, Tag } from 'antd';
+import logoShakti from "../captureMassageShakti.png"
+import { Tag } from 'antd';
 
 
 // Import FontAwesome
@@ -19,8 +19,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
-
-const { Meta } = Card;
 
 // -------------------------------------- Fonction pour le tab material UI ----------------------------------------------
 function TabPanel(props) {
@@ -127,25 +125,13 @@ function Portfolio() {
                     >
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
                             <div className="block-portfolio">
-                                <Card style={{ width: 300 }} hoverable
-                                    cover={
-                                    <img
-                                        alt="Massage Shakti Ardèche"
-                                        src={logo}
-                                    />
-                                    }
-                                    actions={[
-                                        <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank">
-                                            <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#c23616"}}></FontAwesomeIcon>
-                                        </a>   
-                                    ]}
-                                >
-                                    <Meta
-                                        title="Massage Shakti Ardèche"
-                                        description={[<Tag color="default">Html/Css</Tag>, <Tag color="default">Bootstrap</Tag>]}
-                                        
-                                    />
-                                </Card>
+                                <div className="card-portfolio">
+                                    <img src={logoShakti} style={{width: "100%", borderRadius: "10px"}}></img>
+                                    <h3 style={{marginTop: "15px"}}>Massage Shakti Ardèche</h3>
+                                    <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>Site internet de massage en Ardèche pour un particulier.</h5>
+                                    <Tag style={{marginTop: "15px"}}>Html/Css</Tag>
+                                    <Tag>Bootstrap</Tag>
+                                </div>
                             </div>
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
