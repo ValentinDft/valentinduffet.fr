@@ -34,10 +34,10 @@ function Presentation() {
             <Container style={{marginTop: "5%"}} className="container">
                 <Row>
                     <Col sm="12" md="12" lg="12">
-                        <div data-aos="fade-up" data-aos-duration="1500">
-                            <h2 style={{textAlign: "center", marginBottom: "1%", color: "#dff9fb"}}>PRESENTATION</h2>
-                            <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
-                        </div>
+                        
+                        <h2 style={{textAlign: "center", marginBottom: "1%", color: "#dff9fb"}}>PRESENTATION</h2>
+                        <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
+                   
                         <div data-aos="fade-up" data-aos-duration="2000">
                             <h4 style={{marginBottom: "5%", textAlign: "justify", color: "#dff9fb"}}>
                                 Jeune développeur, passionné par les technologies du web. 
