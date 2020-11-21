@@ -24,6 +24,9 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // -------------------------------------- Fonction pour le tab material UI ----------------------------------------------
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -128,38 +131,43 @@ function Portfolio() {
                         style={{padding: "0px"}}
                     >
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
-                            <div className="block-portfolio">
-                                <Col sm="12" lg="6" className="card-portfolio">
-                                    <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}}></img>
-                                    <h3 style={{marginTop: "15px"}}>Massage Shakti Ardèche</h3>
-                                    <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
-                                        Site internet de massage en Ardèche pour un particulier.
-                                    </h5>
-                                    <Tag style={{marginTop: "15px"}}> 
-                                        <FontAwesomeIcon icon={faHtml5} style={{fontSize: "14px"}}></FontAwesomeIcon> Html 
-                                        <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "14px", marginLeft: "2px"}}></FontAwesomeIcon> Css
-                                    </Tag>
-                                    <Tag>
-                                        <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
-                                    </Tag>
-                                    <Row style={{marginTop: "30px"}}>
-                                        <Col sm="3" md="6">
-                                            <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
-                                        </Col>
-                                        <Col sm="3" md="6">
-                                            <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
-                                        </Col>
-                                    </Row>
-                                </Col>
+                            <div data-aos="zoom-in" data-aos-duration="1500">
+                                <div className="block-portfolio">
+                                    <Col sm="12" lg="6" className="card-portfolio">
+                                        <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}}></img>
+                                        <h3 style={{marginTop: "15px"}}>Massage Shakti Ardèche</h3>
+                                        <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
+                                            Site internet de massage en Ardèche pour un particulier.
+                                        </h5>
+                                        <Tag style={{marginTop: "15px"}}> 
+                                            <FontAwesomeIcon icon={faHtml5} style={{fontSize: "14px"}}></FontAwesomeIcon> Html 
+                                            <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "14px", marginLeft: "2px"}}></FontAwesomeIcon> Css
+                                        </Tag>
+                                        <Tag>
+                                            <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
+                                        </Tag>
+                                        <Row style={{marginTop: "30px"}}>
+                                            <Col sm="3" md="6">
+                                                <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
+                                            </Col>
+                                            <Col sm="3" md="6">
+                                                <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </div>
                             </div>
+                            
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
-                            <div className="block-portfolio">
-                                <Col sm="12" lg="6" className="card-portfolio">
-                                    <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
-                                        Bientot...
-                                    </h5>
-                                </Col>
+                            <div data-aos="zoom-in" data-aos-duration="1500">
+                                <div className="block-portfolio">
+                                    <Col sm="12" lg="6" className="card-portfolio">
+                                        <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
+                                            Bientot...
+                                        </h5>
+                                    </Col>
+                                </div>
                             </div>
                         </TabPanel>
                     </SwipeableViews>

@@ -9,6 +9,7 @@ import {Animated} from "react-animated-css";
 import imgCard from '../IMG_5395.jpg';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Typical from "react-typical"
 
 function Presentation() {
     return (
@@ -23,7 +24,13 @@ function Presentation() {
                     <Col sm="12" style={{textAlign: "center"}}>
                         <Animated animationIn="slideInUp" animationInDuration="1500" isVisible={true}>
                             <h1 style={{color: "#dff9fb"}}>Valentin Duffet</h1>
-                            <h3 style={{color: "#c23616"}}>Développeur Web fullstack Javascript <FontAwesomeIcon icon={faJs} style={{color: "#dff9fb"}}/> </h3>
+                            <h3 style={{color: "#c23616"}}>
+                                <Typical
+                                    loop={Infinity}
+                                    wrapper="i"
+                                    steps={["Développeur Web fullstack Javascript", 2000, "MongoDB, Express, React JS, Node JS", 2000]}
+                                />
+                            </h3>
                             <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                             <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                         </Animated>
