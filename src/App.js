@@ -5,6 +5,7 @@ import Education from'./components/Education';
 import Competences from'./components/Competences';
 import Portfolio from'./components/Portfolio';
 import Contact from'./components/Contact';
+import Footer from'./components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -30,6 +31,8 @@ function App() {
       <Portfolio/>
 
       <Contact/>
+
+      <Footer/>
     </div>
   );
 }
