@@ -103,7 +103,12 @@ body{
     max-width: 50% !important;
 }
 
-@media screen and (max-width:768px){
+.timeline-mobile{
+    display: none;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:770px){
 	
     .img
     {
@@ -111,5 +116,28 @@ body{
         margin-right: 0;
         width: 350px !important;
         margin-bottom: 10% !important;
+    }
+    .timeline-desktop{
+        display: none;
+    }
+    .block-education-right::before{
+        display: none;
+    }
+    .block-education-left::before{
+        display: none;
+    }
+    .timeline-mobile{
+        display: block;
+    }
+}
+
+@media screen and (max-width:585px){
+	
+    .img-competences{
+        height: 70% !important;
+        width: 70% !important;
+    }
+    .desc-competences{
+        height: 160px;
     }
 }

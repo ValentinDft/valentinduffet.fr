@@ -31,11 +31,11 @@ function Education() {
             </Row>
             <Row>
                 <Col>
-                    <Timeline mode="alternate">
-                        <Col sm="12" md="12" lg="12"> 
+                    <Timeline mode="alternate" className="timeline-desktop">
+                        <Col sm="1" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-left" data-aos-duration="1500">
-                                    <div className="block-education-right">
+                                <div data-aos="zoom-in" data-aos-duration="1500">
+                                    <div className="block-education-right" >
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
                                         <h4><FontAwesomeIcon icon={faRocket} style={{fontSize: "20px"}}></FontAwesomeIcon> La Capsule Academy - Lyon</h4>
@@ -51,9 +51,9 @@ function Education() {
                                 </div>
                             </Timeline.Item>
                         </Col>
-                        <Col sm="12" md="12" lg="12"> 
+                        <Col sm="1" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-right" data-aos-duration="1500">
+                                <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-left">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}>
@@ -72,9 +72,9 @@ function Education() {
                                 </div>
                             </Timeline.Item>
                         </Col>
-                        <Col sm="12" md="12" lg="12"> 
+                        <Col sm="1" md="12" lg="12"> 
                             <Timeline.Item>
-                                <div data-aos="zoom-in-left" data-aos-duration="1500">
+                                <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-right">
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
                                         <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
@@ -87,6 +87,47 @@ function Education() {
                         </Col>
                         
                     </Timeline>
+                    <div data-aos="zoom-in" data-aos-duration="1500" className="timeline-mobile">
+                        <div className="block-education-right" >
+                            <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
+                            <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
+                            <h4><FontAwesomeIcon icon={faRocket} style={{fontSize: "20px"}}></FontAwesomeIcon> La Capsule Academy - Lyon</h4>
+                            <h5 style={{color: "#c23616"}}>Formation développeur web fullstack Javascript</h5>
+                            <h6>
+                                <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                React JS <FontAwesomeIcon icon={faReact} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                React Native & Redux <FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                Node JS / Express & MongoDB <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                Boostrap <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px"}}></FontAwesomeIcon> Git
+                            </h6>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1500" className="timeline-mobile">
+                        <div className="block-education-left">
+                            <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
+                            <h6 style={{color: "#c23616"}}>
+                                <FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2017 - 2019
+                            </h6>
+                            <h4>Lycée Polyvalent Astier - Aubenas 07200</h4>
+                            <h5 style={{color: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux), admis</h5>
+                            <h6>
+                                <FontAwesomeIcon icon={faJava} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                Java <FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                HTML <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                CSS <FontAwesomeIcon icon={faJs} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                Javascript <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px"}}></FontAwesomeIcon> 
+                                Php & MySql & infrastuctures réseaux</h6>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-duration="1500" className="timeline-mobile">
+                        <div className="block-education-right">
+                            <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
+                            <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 2013 - 2016</h6>
+                            <h4>Lycée Polyvalent Astier - Aubenas 07200</h4>
+                            <h5 style={{color: "#c23616"}}>Baccalauréat ELEEC, mention assez bien</h5>
+                            <h6>ELectrotechnique Energie Equipement Communicant</h6>
+                        </div>
+                    </div>
                 </Col>
                     
                

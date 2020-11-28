@@ -28,10 +28,10 @@ function Competences() {
             <div data-aos="flip-up" data-aos-duration="1500">
                 <Col className="block-competences">
                     <Row>
-                        <Col sm="12" md="6" lg="3">
-                            <CardImg src={logoFront} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}}/>
+                        <Col xs="12" sm="6" lg="3">
+                            <CardImg src={logoFront} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}} className="img-competences"/>
                         </Col> 
-                        <Col sm="12" md="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <Col xs="12" sm="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
                             <div data-aos="fade-down" data-aos-duration="1000">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
@@ -53,7 +53,7 @@ function Competences() {
             <div data-aos="flip-down" data-aos-duration="1500">
                 <Col className="block-competences" style={{marginTop: "15px"}}>
                     <Row>
-                        <Col sm="12" md="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}}>
+                        <Col xs="12" sm="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
                             <div data-aos="fade-up" data-aos-duration="1000">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
@@ -66,8 +66,8 @@ function Competences() {
                                 </h5>
                             </div>
                         </Col> 
-                        <Col sm="12" md="6" lg="3">
-                            <CardImg src={logoBack} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}}/>
+                        <Col xs="12" sm="6" lg="3">
+                            <CardImg src={logoBack} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}} className="img-competences"/>
                         </Col> 
                     </Row>
                 </Col>

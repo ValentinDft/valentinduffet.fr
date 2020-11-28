@@ -134,7 +134,7 @@ function Portfolio() {
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
                                     <Col sm="12" lg="6" className="card-portfolio">
-                                        <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}}></img>
+                                        <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h3 style={{marginTop: "15px"}}>Massage Shakti Ardèche</h3>
                                         <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
                                             Site internet de massage en Ardèche pour un particulier.
@@ -147,10 +147,10 @@ function Portfolio() {
                                             <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
                                         </Tag>
                                         <Row style={{marginTop: "30px"}}>
-                                            <Col sm="3" md="6">
+                                            <Col xs="6">
                                                 <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
                                             </Col>
-                                            <Col sm="3" md="6">
+                                            <Col xs="6">
                                                 <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
                                             </Col>
                                         </Row>
