@@ -2,7 +2,8 @@ import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,15 +12,22 @@ import "aos/dist/aos.css";
 
 function Footer() {
     return (
-        <Container fluid={true} style={{marginTop: "5%", backgroundColor: "#333333"}}>
+        <Container fluid={true} style={{marginTop: "5%"}}>
             <Row>
                 <Col style={{display: "flex", justifyContent: "center"}}>
-                    <FontAwesomeIcon icon={faChevronUp} style={{fontSize: "23px", color: "c23616", marginTop: "1%"}}></FontAwesomeIcon>
+                    <div data-aos="fade-down" data-aos-delay="1500" data-aos-delay="400">
+                        <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                        
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">
+                        
+                        <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                    </div>
                 </Col>
             </Row>
             <Row>
                 <Col style={{display: "flex", justifyContent: "center"}}>
-                    <h6 style={{color: "white", marginTop: "1%"}}>© 2020 Valentin Duffet</h6>
+                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "5%"}}>© 2020 Valentin Duffet</h6>
                 </Col>
             </Row>
         </Container> 
