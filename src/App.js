@@ -1,5 +1,6 @@
 import './App.css';
 import NavbarTop from'./components/Navbar';
+import Header from'./components/Header';
 import Presentation from'./components/Presentation';
 import Education from'./components/Education';
 import Competences from'./components/Competences';
@@ -20,7 +21,9 @@ function App() {
 
   return (
     <div>
-      <NavbarTop/>
+      {/* <NavbarTop/> */}
+
+      <Header/>
 
       <Presentation/>
 

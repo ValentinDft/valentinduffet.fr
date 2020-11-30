@@ -20,7 +20,7 @@ function Competences() {
         <Container style={{marginTop: "5%"}}>
             <Row>
                 <Col>
-                    <h2 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h2>
+                    <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 </Col>
             </Row>
@@ -35,13 +35,13 @@ function Competences() {
                             <div data-aos="fade-down" data-aos-duration="1000">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
-                                    Html <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
+                                    Html, JSX <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
                                     Css & <FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
                                     Javascript
                                 </h5> <br/>
                                 <h4>Frameworks et outils: </h4>
                                 <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
-                                    React JS/Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
+                                    React JS, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
                                     Bootstrap & Ant-design
                                 </h5>
                             </div>
@@ -62,7 +62,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Frameworks et Base de donnée: </h4>
                                 <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
-                                    Node JS, Express & MongoDB
+                                    Node.js, Express.js & MongoDB
                                 </h5>
                             </div>
                         </Col> 

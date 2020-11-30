@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 function Contact() {
     return (
         <Container style={{marginTop: "5%"}}>
-            <h2 style={{textAlign: "center", marginBottom: "1%", color: "#dff9fb"}}>CONTACT</h2>
+            <h1 style={{textAlign: "center", marginBottom: "1%", color: "#dff9fb"}}>CONTACT</h1>
             <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
             <Row style={{display: "flex", justifyContent: "center"}}>
                 <Col style={{display: "flex", justifyContent: "center"}}>
