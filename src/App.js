@@ -21,22 +21,25 @@ function App() {
 
   return (
     <div>
-      {/* <NavbarTop/> */}
-
-      <Header/>
-
-      <Presentation/>
-
-      <Education/>
       
-      <Competences/>
-       
-      <Portfolio/>
+        {/* <NavbarTop/> */}
 
-      <Contact/>
+        <Header/>
 
-      <Footer/>
+        <Presentation/>
+      <div className="bg-gradient">
+        <Education/>
+        
+        <Competences/>
+        
+        <Portfolio/>
+
+        <Contact/>
+
+        <Footer/>
+      </div>
     </div>
+    
   );
 }
 

@@ -7,16 +7,15 @@ import "aos/dist/aos.css";
 
 function Presentation() {
     return (
-       
         <Container style={{marginTop: "5%"}} className="container">
             <Row>
                 <Col sm="12" md="12" lg="12">
                     
-                    <h1 style={{textAlign: "center", marginBottom: "1%", color: "#dff9fb"}}>PRESENTATION</h1>
+                    <h1 style={{textAlign: "center", marginBottom: "1%"}}>PRESENTATION</h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 
                     <div data-aos="fade-up" data-aos-duration="2000">
-                        <h4 style={{marginBottom: "5%", textAlign: "justify", color: "#dff9fb"}}>
+                        <h4 style={{marginBottom: "5%", textAlign: "justify"}}>
                             Jeune développeur, passionné par les technologies du web. 
                             J'ai appris à coder dés le lycée par simple curiosité, pour savoir comment était construit un site web. J'ai vraiment adoré ça. <br></br>
                             Par la suite j'ai effectué un <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux)</span> que j'ai obtenus. <br></br>
@@ -27,6 +26,8 @@ function Presentation() {
                 </Col>
             </Row>
         </Container>
+        
+        
     );
   }
   

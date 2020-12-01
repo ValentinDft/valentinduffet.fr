@@ -4,11 +4,6 @@
 
 body{
     font-family: 'Ubuntu', sans-serif !important;
-    background: rgb(59,86,163);
-    background: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
-    background-size: 150%;
-    background-position: center;
-    background-attachment: fixed
 }
 
 h1{
@@ -22,6 +17,14 @@ h1{
     background-image: url("./web-design-2038872_1920.jpg");
     background-size: 150%;
     background-position: right;
+    background-attachment: fixed
+}
+
+.bg-gradient{
+    background: rgb(59,86,163);
+    background: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
+    background-size: 150%;
+    background-position: center;
     background-attachment: fixed
 }
 
@@ -153,4 +156,25 @@ h1{
     .desc-competences{
         height: 160px;
     }
+}
+
+.custom-shape-divider-bottom-1604697511 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* transform: rotate(180deg); */
+}
+
+.custom-shape-divider-bottom-1604697511 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 124px;
+}
+
+#gradient{
+    fill: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
 }
