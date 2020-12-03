@@ -124,6 +124,28 @@ h1{
     margin-bottom: 30px;
 }
 
+@media screen and (max-width:1470px){
+	.waves-bottom-presentation{
+        bottom: -590px !important;
+    }
+}
+
+@media screen and (max-width:1088px){
+	.titre-education{
+        margin-top: 5% !important;
+    }
+    .waves-bottom-presentation{
+        bottom: -575px !important;
+    }
+}
+
+@media screen and (max-width:916px){
+    .waves-bottom-presentation{
+        bottom: -565px !important;
+    }
+    
+}
+
 @media screen and (max-width:770px){
 	
     .img
@@ -145,6 +167,9 @@ h1{
     .timeline-mobile{
         display: block;
     }
+    .waves-bottom-presentation{
+        display: none;
+    }
 }
 
 @media screen and (max-width:585px){
@@ -158,23 +183,35 @@ h1{
     }
 }
 
-.custom-shape-divider-bottom-1604697511 {
+.waves-bottom-header {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    /* transform: rotate(180deg); */
 }
 
-.custom-shape-divider-bottom-1604697511 svg {
+.waves-bottom-header svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 124px;
+    width: calc(100% + 35px);
+    height: 100px;
 }
 
-#gradient{
-    fill: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
+.waves-bottom-presentation {
+    position: absolute;
+    bottom: -620px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves-bottom-presentation svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 90px);
+    height: 90px;
 }
