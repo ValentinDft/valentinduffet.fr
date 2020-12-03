@@ -15,7 +15,7 @@ function Presentation() {
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 
                     <div data-aos="fade-up" data-aos-duration="2000">
-                        <h4 style={{marginBottom: "5%", textAlign: "justify"}}>
+                        <h4 style={{marginBottom: "5%", textAlign: "justify"}} className="texte-presentation">
                             Jeune développeur, passionné par les technologies du web. 
                             J'ai appris à coder dés le lycée par simple curiosité, pour savoir comment était construit un site web. J'ai vraiment adoré ça. <br></br>
                             Par la suite j'ai effectué un <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux)</span> que j'ai obtenus. <br></br>

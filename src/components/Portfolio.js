@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import '../App.css';
 import logoShakti from "../captureMassageShakti.png"
-import { Tag } from 'antd';
+import { Tag, Tooltip } from 'antd';
 
 
 // Import FontAwesome
@@ -97,6 +97,9 @@ function Portfolio() {
         setValue(index);
     };
 
+    const textIconGitHub = <span>Github du projet</span>;
+    const textIconSite = <span>Site web</span>
+
     return (
         
         <Container style={{marginTop: "5%"}}>
@@ -135,10 +138,10 @@ function Portfolio() {
                                 <div className="block-portfolio">
                                     <Col sm="12" lg="6" className="card-portfolio">
                                         <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
-                                        <h3 style={{marginTop: "15px"}}>Massage Shakti Ardèche</h3>
-                                        <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
+                                        <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Massage Shakti Ardèche</h2>
+                                        <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7"}}>
                                             Site internet de massage en Ardèche pour un particulier.
-                                        </h5>
+                                        </h3>
                                         <Tag style={{marginTop: "15px"}}> 
                                             <FontAwesomeIcon icon={faHtml5} style={{fontSize: "14px"}}></FontAwesomeIcon> Html 
                                             <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "14px", marginLeft: "2px"}}></FontAwesomeIcon> Css
@@ -148,10 +151,14 @@ function Portfolio() {
                                         </Tag>
                                         <Row style={{marginTop: "30px"}}>
                                             <Col xs="6">
-                                                <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
+                                                <Tooltip placement="bottom" title={textIconGitHub}>
+                                                    <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                                </Tooltip>
                                             </Col>
                                             <Col xs="6">
-                                                <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "#565656"}}></FontAwesomeIcon></a>
+                                                <Tooltip placement="bottom" title={textIconSite}>
+                                                <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                                </Tooltip>
                                             </Col>
                                         </Row>
                                     </Col>
@@ -163,9 +170,9 @@ function Portfolio() {
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
                                     <Col sm="12" lg="6" className="card-portfolio">
-                                        <h5 style={{fontSize: "15px", marginTop: "15px", color: "#585858"}}>
+                                        <h2 style={{fontSize: "25px", marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>
                                             Bientot...
-                                        </h5>
+                                        </h2>
                                     </Col>
                                 </div>
                             </div>
