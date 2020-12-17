@@ -136,7 +136,7 @@ function Portfolio() {
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
-                                    <Col sm="12" lg="6" className="card-portfolio">
+                                    <Col xs="8" sm="8" lg="6" className="card-portfolio">
                                         <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Massage Shakti Ardèche</h2>
                                         <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7"}}>
@@ -169,7 +169,7 @@ function Portfolio() {
                         <TabPanel value={value} index={1} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
-                                    <Col sm="12" lg="6" className="card-portfolio">
+                                    <Col xs="5" sm="6" lg="6" className="card-portfolio">
                                         <h2 style={{fontSize: "25px", marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>
                                             Bientot...
                                         </h2>

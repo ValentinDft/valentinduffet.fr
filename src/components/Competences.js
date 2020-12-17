@@ -28,20 +28,20 @@ function Competences() {
             <div data-aos="flip-up" data-aos-duration="1500">
                 <Col className="block-competences">
                     <Row>
-                        <Col xs="12" sm="6" lg="3">
+                        <Col xs="6" sm="6" lg="3">
                             <CardImg src={logoFront} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}} className="img-competences"/>
                         </Col> 
-                        <Col xs="12" sm="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
-                            <div data-aos="fade-down" data-aos-duration="1000">
+                        <Col xs="6" sm="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
+                            <div data-aos="fade-down" data-aos-duration="1000" className="texte-competences">
                                 <h4>Les languages : </h4>
-                                <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
-                                    Html, JSX <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
-                                    Css & <FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon> 
+                                <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
+                                    Html, JSX <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
+                                    Css & <FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
                                     Javascript
                                 </h5> <br/>
                                 <h4>Frameworks et outils: </h4>
-                                <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
-                                    React JS, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}}></FontAwesomeIcon>
+                                <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
+                                    React JS, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
                                     Bootstrap & Ant-design
                                 </h5>
                             </div>
@@ -53,20 +53,20 @@ function Competences() {
             <div data-aos="flip-down" data-aos-duration="1500">
                 <Col className="block-competences" style={{marginTop: "15px"}}>
                     <Row>
-                        <Col xs="12" sm="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
-                            <div data-aos="fade-up" data-aos-duration="1000">
+                        <Col xs="6" sm="6" md="6" lg="9" style={{backgroundColor: "#f5f6fa", borderRadius: "5%", display: "flex", flexDirection: "column", justifyContent: "center"}} className="desc-competences">
+                            <div data-aos="fade-up" data-aos-duration="1000" className="texte-competences">
                                 <h4>Les languages : </h4>
-                                <h5><FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
-                                    Javascript & <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
+                                <h5><FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
+                                    Javascript & <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
                                     Php
                                 </h5> <br/>
                                 <h4>Frameworks et Base de donnée: </h4>
-                                <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}}></FontAwesomeIcon> 
+                                <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
                                     Node.js, Express.js & MongoDB
                                 </h5>
                             </div>
                         </Col> 
-                        <Col xs="12" sm="6" lg="3">
+                        <Col xs="6" sm="6" md="6" lg="3">
                             <CardImg src={logoBack} alt="Front-end" style={{borderRadius: "5%", width: "100%", height: "100%"}} className="img-competences"/>
                         </Col> 
                     </Row>
