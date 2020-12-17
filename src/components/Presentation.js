@@ -5,6 +5,10 @@ import '../App.css';
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
 function Presentation() {
     return (
         <Container style={{marginTop: "5%"}} className="container">
@@ -23,6 +27,15 @@ function Presentation() {
                             formation de développeur web fullstack Javascript à La Capsule,</span> sur la stack MERN (MongoDB, Express, React Js, Node Js)
                         </h4>
                     </div>
+                    <div style={{display:"flex", justifyContent:"center"}}>
+                        <div data-aos="fade-up" data-aos-delay="1500" data-aos-delay="400">
+                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "28px", marginRight: "5px", color: "black"}}></FontAwesomeIcon></a>
+                        </div>
+                        <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">  
+                            <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
+                        </div>
+                    </div>
+                    
                 </Col>
             </Row>
             <div className="waves-bottom-presentation">
