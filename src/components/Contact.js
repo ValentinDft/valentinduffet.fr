@@ -15,7 +15,7 @@ function Contact() {
             <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
             <Row style={{display: "flex", justifyContent: "center"}}>
                 <Col style={{display: "flex", justifyContent: "center"}}>
-                    <Form style={{width:"40%"}}>
+                    <Form style={{width:"50%", display: "flex", flexDirection: "column", justifyContent: "center"}}>
                         <FormGroup>
                             <Label style={{color: "white"}}>Nom et Prénom : </Label>
                             <Input type="text" name="nom" placeholder="Saisir votre nom et votre prénom" required/>
@@ -24,11 +24,11 @@ function Contact() {
                             <Label style={{color: "white"}}>Email : </Label>
                             <Input type="email" name="email" placeholder="Saisir votre email@" required/>
                         </FormGroup>
-                        <FormGroup>
+                        <FormGroup style={{marginBottom:"6%"}}>
                             <Label style={{color: "white"}}>Message : </Label>
                             <Input type="textarea" name="message" placeholder="Saisir votre message" required/>
                         </FormGroup>
-                        <Button>Envoyer</Button>
+                        <Button className="button-envoyer">Envoyer</Button>
                     </Form>
                 </Col>
             </Row>

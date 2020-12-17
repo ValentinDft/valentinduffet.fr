@@ -125,6 +125,19 @@ h1{
     margin-bottom: 30px;
 }
 
+.button-envoyer{
+    background: rgb(59,86,163);
+    background: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
+    background-size: 150%;
+    background-position: center;
+    border: none !important;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-envoyer:hover{
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width:1470px){
 	.waves-bottom-presentation{
         bottom: -590px !important;
@@ -147,6 +160,9 @@ h1{
     .img-competences{
         width: 60% !important;
     }
+    .card-portfolio{
+        margin-left: 18%;
+    }
     
 }
 
@@ -157,7 +173,7 @@ h1{
     
 }
 
-@media screen and (max-width:770px){
+@media screen and (max-width:767px){
 	
     .img
     {
@@ -188,7 +204,12 @@ h1{
         height: 235px;
     }
     .img-competences{
-        width: 60% !important;
+        width: 70% !important;
+        height: 90% !important;
+        margin-top: 5% !important;
+    }
+    .texte-competences h4,h5{
+        font-size: 20px !important;
     }
 }
 
@@ -202,13 +223,34 @@ h1{
 @media screen and (max-width:585px){
 	
     .img-competences{
-        height: 70% !important;
-        width: 70% !important;
+        height: 80% !important;
+        width: 90% !important;
+        margin-top: 5% !important;
     }
     .desc-competences{
-        height: 160px;
+        height: 200px;
+    }
+    .texte-competences h4,h5{
+        font-size: 18px !important;
+    }
+    .card-portfolio{
+        margin-left: 15%;
     }
     
+}
+
+@media screen and (max-width: 500px){
+    .img-competences{
+        height: 90% !important;
+        width: 90% !important;
+        margin-top: 8% !important;
+    }
+    .texte-competences h4,h5{
+        font-size: 13px !important;
+    }
+    .icon-competences{
+        font-size: 18px !important;
+    }
 }
 
 .waves-bottom-header {
