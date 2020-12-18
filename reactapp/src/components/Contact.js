@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Col, Row, Container, Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { message } from 'antd';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -10,32 +11,39 @@ import "aos/dist/aos.css";
 
 function Contact() {
     const [nom, setNom] = useState("");
-    console.log('nom:', nom)
     const [email, setEmail] = useState("");
-    console.log('email:', email)
-    const [message, setMessage] = useState("");
-    console.log('message:', message)
+    const [messageEmail, setMessageEmail] = useState("");
+    const key = 'updatable';
 
     let clickEnvoyer = async () => {
         let requete = await fetch('/email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: `nom=${nom}&email=${email}&message=${message}`,
+            body: `nom=${nom}&email=${email}&message=${messageEmail}`,
         });
         let response = await requete.json();
 
         console.log('response:', response);
 
-        // if (response) {
-        //     setSuccessMessage(
-        //         <Alert color='success'>
-        //             {' '}
-        //             Success, check your email : {emailSouscription}
-        //         </Alert>
-        //     );
-        // } else {
-        //     setSuccessMessage(<Alert color='danger'> Error </Alert>);
-        // }
+        if (response) {
+            const openMessage = () => {
+                message.loading({ content: 'Envoie en cours', key });
+                setTimeout(() => {
+                  message.success({ content: 'Envoyé', key, duration: 2 });
+                }, 1500);
+                
+            };
+            openMessage()
+        } else {
+            const openMessage = () => {
+                message.loading({ content: 'Envoie en cours', key });
+                setTimeout(() => {
+                  message.error({ content: "Erreur d'envoie", key, duration: 2 });
+                }, 2000);
+                
+            };
+            openMessage()
+        }
     }
 
     return (
@@ -55,7 +63,7 @@ function Contact() {
                         </FormGroup>
                         <FormGroup style={{marginBottom:"6%"}}>
                             <Label style={{color: "white"}}>Message : </Label>
-                            <Input type="textarea" name="message" placeholder="Saisir votre message" required onChange={(e) => setMessage(e.target.value)}/>
+                            <Input type="textarea" name="message" placeholder="Saisir votre message" required onChange={(e) => setMessageEmail(e.target.value)}/>
                         </FormGroup>
                         <Button className="button-envoyer" onClick={()=>clickEnvoyer()}>Envoyer</Button>
                     </Form>
