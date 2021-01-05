@@ -27,7 +27,7 @@ function Footer() {
             </Row>
             <Row>
                 <Col style={{display: "flex", justifyContent: "center"}}>
-                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "5%"}}>© 2020 Valentin Duffet</h6>
+                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "5%"}}>© 2021 Valentin Duffet</h6>
                 </Col>
             </Row>
         </Container> 
