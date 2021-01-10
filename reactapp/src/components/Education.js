@@ -37,7 +37,7 @@ function Education() {
                                 <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-right" >
                                         <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
-                                        <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 10/2020</h6>
+                                        <h6 style={{color: "#c23616"}}><FontAwesomeIcon icon={faClock} style={{fontSize: "20px"}}></FontAwesomeIcon> 09/2020 - 11/2020</h6>
                                         <h4><FontAwesomeIcon icon={faRocket} style={{fontSize: "20px"}}></FontAwesomeIcon> La Capsule Academy - Lyon</h4>
                                         <h5 style={{color: "#c23616"}}>Formation développeur web fullstack Javascript</h5>
                                         <h6>

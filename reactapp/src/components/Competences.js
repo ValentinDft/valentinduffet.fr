@@ -57,8 +57,7 @@ function Competences() {
                             <div data-aos="fade-up" data-aos-duration="1000" className="texte-competences">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
-                                    Javascript & <FontAwesomeIcon icon={faPhp} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
-                                    Php
+                                    Javascript
                                 </h5> <br/>
                                 <h4>Frameworks et Base de donnée: </h4>
                                 <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
