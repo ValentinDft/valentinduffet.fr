@@ -2,6 +2,7 @@ import React from 'react';
 import { Col, Row, Container } from 'reactstrap';
 import '../App.css';
 import logoShakti from "../captureMassageShakti.png"
+import logoPortfolio from "../portfolio.png"
 import { Tag, Tooltip } from 'antd';
 
 
@@ -13,6 +14,7 @@ import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons'
 
 // Import Material UI
 import PropTypes from 'prop-types';
@@ -170,9 +172,32 @@ function Portfolio() {
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
                                     <Col xs="5" sm="6" lg="6" className="card-portfolio">
-                                        <h2 style={{fontSize: "25px", marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>
-                                            Bientot...
-                                        </h2>
+                                        <img src={logoPortfolio} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
+                                        <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
+                                        <Tag style={{marginTop: "15px"}}> 
+                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                                        </Tag>
+                                        <Tag>
+                                            Express JS
+                                        </Tag>
+                                        <Tag>
+                                            <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
+                                        </Tag>
+                                        <Tag>
+                                            Ant Design
+                                        </Tag>
+                                        <Row style={{marginTop: "30px"}}>
+                                            <Col xs="6">
+                                                <Tooltip placement="bottom" title={textIconGitHub}>
+                                                    <a href="https://github.com/ValentinDft/mon_portfolio" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                                </Tooltip>
+                                            </Col>
+                                            <Col xs="6">
+                                                <Tooltip placement="bottom" title={textIconSite}>
+                                                <a href="https://valentinduffet.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                                </Tooltip>
+                                            </Col>
+                                        </Row>
                                     </Col>
                                 </div>
                             </div>
