@@ -8,14 +8,14 @@ router.post('/email', function(req, res, next) {
   let message = req.body.message;
 
 	const mailjet = require('node-mailjet').connect(
-		'f2d633f385e5b3e93d3d530551330ba1',
-		'17a3eb01e66471749a2517f2e2cb96fa'
+		'42ff3ce7f88c57a2840a85238dab2c9a',
+		'6d1458fa5a4bd08bb2d8613deab4a13c'
 	);
 	const request = mailjet.post('send', { version: 'v3.1' }).request({
 		Messages: [
 			{
 				From: {
-					Email: email,
+					Email: "vavadu07@gmail.com",
 					Name: nom,
 				},
 				To: [
@@ -26,7 +26,7 @@ router.post('/email', function(req, res, next) {
 				],
 				Subject: 'Contact portfolio',
 				HTMLPart:
-					'<h5>' + nom + '</h5> <br> <h4>' + message + '</h4>',
+					'<h5>' + nom + '</h5> <br> <h4>' + message + '</h4> <br> <h4>' + email + '</h4>',
 			},
 		],
 	});
