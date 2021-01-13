@@ -1,5 +1,10 @@
+require('dotenv').config();
 var express = require('express');
 var router = express.Router();
+
+var API_KEY_MAILJET1 = process.env.API_KEY_MAILJET1;
+var API_KEY_MAILJET2 = process.env.API_KEY_MAILJET2;
+var EMAIL_FROM = process.env.EMAIL_FROM;
 
 /* GET home page. */
 router.post('/email', function(req, res, next) {
@@ -8,14 +13,14 @@ router.post('/email', function(req, res, next) {
   let message = req.body.message;
 
 	const mailjet = require('node-mailjet').connect(
-		'42ff3ce7f88c57a2840a85238dab2c9a',
-		'6d1458fa5a4bd08bb2d8613deab4a13c'
+		API_KEY_MAILJET1,
+		API_KEY_MAILJET2
 	);
 	const request = mailjet.post('send', { version: 'v3.1' }).request({
 		Messages: [
 			{
 				From: {
-					Email: "vavadu07@gmail.com",
+					Email: EMAIL_FROM,
 					Name: nom,
 				},
 				To: [
