@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Container } from 'reactstrap';
+import { Row, Col } from 'antd';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
@@ -22,17 +22,18 @@ import "aos/dist/aos.css";
 
 function Education() {
     return (
-        <Container fluid={true} style={{marginTop: "5%"}}>
+        <div fluid={true} style={{marginTop: "5%"}}>
             <Row>
-                <Col>
+                <Col span={24}>
                     <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb"}} className="titre-education">EDUCATION <FontAwesomeIcon icon={faGraduationCap} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col span={23}>
+                    {/* Sur écran normal */}
                     <Timeline mode="alternate" className="timeline-desktop">
-                        <Col sm="1" md="12" lg="12"> 
+                        <Col span={24}> 
                             <Timeline.Item>
                                 <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-right" >
@@ -51,7 +52,7 @@ function Education() {
                                 </div>
                             </Timeline.Item>
                         </Col>
-                        <Col sm="1" md="12" lg="12"> 
+                        <Col span={24}> 
                             <Timeline.Item>
                                 <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-left">
@@ -72,7 +73,7 @@ function Education() {
                                 </div>
                             </Timeline.Item>
                         </Col>
-                        <Col sm="1" md="12" lg="12"> 
+                        <Col span={24}> 
                             <Timeline.Item>
                                 <div data-aos="zoom-in" data-aos-duration="1500">
                                     <div className="block-education-right">
@@ -87,6 +88,8 @@ function Education() {
                         </Col>
                         
                     </Timeline>
+
+                    {/* Sur mobile */}
                     <div data-aos="zoom-in" data-aos-duration="1500" className="timeline-mobile">
                         <div className="block-education-right" >
                             <FontAwesomeIcon icon={faUniversity} style={{fontSize: "25px"}}></FontAwesomeIcon>
@@ -135,7 +138,7 @@ function Education() {
                 
             
             
-        </Container>
+        </div>
         
         
          

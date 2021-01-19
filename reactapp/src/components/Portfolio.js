@@ -1,10 +1,8 @@
 import React from 'react';
-import { Col, Row, Container } from 'reactstrap';
+import { Tag, Tooltip, Col, Row } from 'antd';
 import '../App.css';
 import logoShakti from "../captureMassageShakti.png"
 import logoPortfolio from "../portfolio.png"
-import { Tag, Tooltip } from 'antd';
-
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -104,15 +102,15 @@ function Portfolio() {
 
     return (
         
-        <Container style={{marginTop: "5%"}}>
+        <div style={{marginTop: "5%", marginLeft: "15%", marginRight: "15%"}}>
             <Row>
-                <Col>
+                <Col span={24}>
                     <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb"}}>PORTFOLIO <FontAwesomeIcon icon={faLaptopCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col span={24}>
                     <AppBar position="static" color="default">
                         <Tabs
                         value={value}
@@ -138,7 +136,7 @@ function Portfolio() {
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
-                                    <Col xs="8" sm="8" lg="6" className="card-portfolio">
+                                    <Col xs={16} lg={12} className="card-portfolio">
                                         <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Massage Shakti Ardèche</h2>
                                         <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7"}}>
@@ -152,12 +150,12 @@ function Portfolio() {
                                             <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
                                         </Tag>
                                         <Row style={{marginTop: "30px"}}>
-                                            <Col xs="6">
+                                            <Col xs={12}>
                                                 <Tooltip placement="bottom" title={textIconGitHub}>
                                                     <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                                                 </Tooltip>
                                             </Col>
-                                            <Col xs="6">
+                                            <Col xs={12}>
                                                 <Tooltip placement="bottom" title={textIconSite}>
                                                 <a href="https://massageshaktiardeche.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                                                 </Tooltip>
@@ -171,7 +169,7 @@ function Portfolio() {
                         <TabPanel value={value} index={1} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
-                                    <Col xs="5" sm="6" lg="6" className="card-portfolio">
+                                    <Col xs={10} sm={12} className="card-portfolio">
                                         <img src={logoPortfolio} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
                                         <Tag style={{marginTop: "15px"}}> 
@@ -180,19 +178,13 @@ function Portfolio() {
                                         <Tag>
                                             Express JS
                                         </Tag>
-                                        <Tag>
-                                            <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "14px"}}></FontAwesomeIcon> Bootstrap
-                                        </Tag>
-                                        <Tag>
-                                            Ant Design
-                                        </Tag>
                                         <Row style={{marginTop: "30px"}}>
-                                            <Col xs="6">
+                                            <Col xs={12}>
                                                 <Tooltip placement="bottom" title={textIconGitHub}>
                                                     <a href="https://github.com/ValentinDft/mon_portfolio" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                                                 </Tooltip>
                                             </Col>
-                                            <Col xs="6">
+                                            <Col xs={12}>
                                                 <Tooltip placement="bottom" title={textIconSite}>
                                                 <a href="https://valentinduffet.fr/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                                                 </Tooltip>
@@ -205,7 +197,7 @@ function Portfolio() {
                     </SwipeableViews>
                 </Col>
             </Row>
-        </Container>
+        </div>
         
     
         

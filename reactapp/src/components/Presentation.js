@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
+import { Row, Col } from 'antd';
 import '../App.css';
 
 import AOS from "aos";
@@ -11,9 +11,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Presentation() {
     return (
-        <Container style={{marginTop: "5%"}} className="container">
+        <div style={{marginTop: "5%"}} className="container">
             <Row>
-                <Col sm="12" md="12" lg="12">
+                <Col span={24}>
                     
                     <h1 style={{textAlign: "center", marginBottom: "1%"}}>PRESENTATION</h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
@@ -43,7 +43,7 @@ function Presentation() {
                     <path fill="white" d="M0,32L60,32C120,32,240,32,360,64C480,96,600,160,720,165.3C840,171,960,117,1080,85.3C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
                 </svg>
             </div>
-        </Container>
+        </div>
         
         
     );
