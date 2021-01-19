@@ -131,11 +131,42 @@ h1{
     background-size: 150%;
     background-position: center;
     border: none !important;
+    height: 32px;
+    border-radius: 5px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 .button-envoyer:hover{
+    background: rgb(59,86,163);
+    background: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
+    background-size: 150%;
+    background-position: center;
+    border: none !important;
+    color: white;
     box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.button-envoyer:focus{
+    background: rgb(59,86,163);
+    background: linear-gradient(156deg, rgba(59,86,163,1) 14%, rgba(201,53,53,0.8914916308320203) 82%);
+    background-size: 150%;
+    background-position: center;
+    border: none !important;
+    color: white;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.input-text-contact{
+    width: 100%;
+    padding: 4px 11px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.input-text-contact:hover{
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 80px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width:1470px){
