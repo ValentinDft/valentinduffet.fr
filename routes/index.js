@@ -12,6 +12,7 @@ router.post('/email', function(req, res, next) {
   let nom = req.body.nom;
   let message = req.body.message;
 
+  try {
 	const mailjet = require('node-mailjet').connect(
 		API_KEY_MAILJET1,
 		API_KEY_MAILJET2
@@ -43,14 +44,15 @@ router.post('/email', function(req, res, next) {
 			let send = false;
 
 			if (status === 'success') {
-				res.json({ send: true });
+				res.json({ send: true, message: "OK" });
 			} else {
-				res.json({ send: false });
+				res.json({ send: false, message: "failed"});
 			}
 		})
-		.catch((err) => {
-			console.log(err.statusCode);
-		});
+  } catch (err) {
+	console.error('err', err);
+  }
+		
 });
 
 module.exports = router;
