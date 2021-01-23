@@ -3,6 +3,7 @@ import { Tag, Tooltip, Col, Row } from 'antd';
 import '../App.css';
 import logoShakti from "../captureMassageShakti.png"
 import logoPortfolio from "../portfolio.png"
+import logoWeWorkHome from "../weworkhome.png"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -136,11 +137,11 @@ function Portfolio() {
                         <TabPanel classes={{ root: classes.tab }} value={value} index={0} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
                                 <div className="block-portfolio">
-                                    <Col xs={16} lg={12} className="card-portfolio">
+                                    <Col xs={16} lg={12} className="card-portfolio" style={{marginLeft: "25%"}}>
                                         <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Massage Shakti Ardèche</h2>
-                                        <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7"}}>
-                                            Site internet de massage en Ardèche pour un particulier.
+                                        <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding: "0px 10px"}}>
+                                            Site web de massage en Ardèche pour un particulier, avec présentation des différentes prestations ainsi qu'un formulaire de contact.
                                         </h3>
                                         <Tag style={{marginTop: "15px"}}> 
                                             <FontAwesomeIcon icon={faHtml5} style={{fontSize: "14px"}}></FontAwesomeIcon> Html 
@@ -168,17 +169,26 @@ function Portfolio() {
                         </TabPanel>
                         <TabPanel value={value} index={1} dir={theme.direction}>
                             <div data-aos="zoom-in" data-aos-duration="1500">
-                                <div className="block-portfolio">
-                                    <Col xs={10} sm={12} className="card-portfolio">
+                                <Row className="block-portfolio">
+                                    <Col xs={10} sm={11} className="card-portfolio">
                                         <img src={logoPortfolio} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                                         <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
-                                        <Tag style={{marginTop: "15px"}}> 
+                                        <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7"}}>
+                                            Portfolio en ligne réalisé avec React JS. Présentation de mon parcours, mes études ainsi que mes compétences acquises. 
+                                        </h3>
+                                        <Tag style={{marginTop: "25px"}}> 
                                             <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
                                         </Tag>
                                         <Tag>
                                             Express JS
                                         </Tag>
-                                        <Row style={{marginTop: "30px"}}>
+                                        <Tag>
+                                            Ant Design
+                                        </Tag>
+                                        <Tag>
+                                            Firebase Hosting
+                                        </Tag>
+                                        <Row style={{marginTop: "45px"}}>
                                             <Col xs={12}>
                                                 <Tooltip placement="bottom" title={textIconGitHub}>
                                                     <a href="https://github.com/ValentinDft/mon_portfolio" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
@@ -191,7 +201,37 @@ function Portfolio() {
                                             </Col>
                                         </Row>
                                     </Col>
-                                </div>
+                                    <Col xs={10} sm={11} className="card-portfolio">
+                                        <img src={logoWeWorkHome} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
+                                        <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome</h2>
+                                        <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 10px"}}>
+                                            Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
+                                        </h3>
+                                        <Tag style={{marginTop: "15px"}}> 
+                                            <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                                        </Tag>
+                                        <Tag>
+                                            Express JS
+                                        </Tag>
+                                        <Tag>
+                                            Ant Design
+                                        </Tag>
+                                        <br></br>
+                                        <Tag>
+                                            Stripe
+                                        </Tag>
+                                        <Tag>
+                                            Heroku Hosting
+                                        </Tag>
+                                        <Row style={{marginTop: "30px"}}>
+                                            <Col xs={24}>
+                                                <Tooltip placement="bottom" title={textIconSite}>
+                                                <a href="https://www.weworkhome.io/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                                </Tooltip>
+                                            </Col>
+                                        </Row>
+                                    </Col>
+                                </Row>
                             </div>
                         </TabPanel>
                     </SwipeableViews>

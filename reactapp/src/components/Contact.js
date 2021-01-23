@@ -21,8 +21,6 @@ function Contact() {
         });
         let response = await requete.json();
 
-        console.log('response:', response);
-
         if (response) {
             const openMessage = () => {
                 message.loading({ content: 'Envoie en cours', key });
