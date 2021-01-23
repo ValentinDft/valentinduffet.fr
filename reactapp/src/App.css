@@ -102,11 +102,15 @@ h1{
     padding-left: 0px !important;
     padding-right: 0px !important;
     box-shadow: 0 0px 80px rgba(0, 0, 0, 0.2), 0px 0px 120px rgba(0, 0, 0, 0.2);
-    /* margin-left: 25%; */
+    margin-left: 12%;
 }
 
 .card-portfolio:hover{
     box-shadow: 0 20px 120px rgba(0, 0, 0, 0.2), 0px 0px 150px rgba(0, 0, 0, 0.2);
+}
+
+.ml-none{
+    margin-left: 0px;
 }
 
 .card-contact{
@@ -181,6 +185,12 @@ h1{
     .waves-bottom-presentation{
         bottom: -575px !important;
     }
+    .card-portfolio{
+        margin-left: 20%;
+    }
+    .ml-none{
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width:992px){
@@ -189,9 +199,6 @@ h1{
     }
     .img-competences{
         width: 60% !important;
-    }
-    .card-portfolio{
-        margin-left: 18%;
     }
     
 }
@@ -203,7 +210,7 @@ h1{
     
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
 	
     .img
     {
@@ -241,6 +248,10 @@ h1{
     .texte-competences h4,h5{
         font-size: 20px !important;
     }
+    .card-portfolio{
+        margin-left: 10%;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width:660px){
@@ -263,9 +274,7 @@ h1{
     .texte-competences h4,h5{
         font-size: 18px !important;
     }
-    .card-portfolio{
-        margin-left: 15%;
-    }
+    
     
 }
 
@@ -280,6 +289,9 @@ h1{
     }
     .icon-competences{
         font-size: 18px !important;
+    }
+    .card-portfolio{
+        margin-left: 0px;
     }
 }
 
