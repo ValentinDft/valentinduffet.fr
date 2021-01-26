@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row, Container } from 'reactstrap';
+import { Col, Row } from 'antd';
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -12,9 +12,9 @@ import "aos/dist/aos.css";
 
 function Footer() {
     return (
-        <Container fluid={true} style={{marginTop: "5%"}}>
+        <div style={{marginTop: "5%"}}>
             <Row>
-                <Col style={{display: "flex", justifyContent: "center"}}>
+                <Col span={24} style={{display: "flex", justifyContent: "center"}}>
                     <div data-aos="fade-down" data-aos-delay="1500" data-aos-delay="400">
                         <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                         
@@ -26,11 +26,11 @@ function Footer() {
                 </Col>
             </Row>
             <Row>
-                <Col style={{display: "flex", justifyContent: "center"}}>
-                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "5%"}}>© 2021 Valentin Duffet</h6>
+                <Col span={24} style={{display: "flex", justifyContent: "center"}}>
+                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "4%"}}>© 2021 Valentin Duffet</h6>
                 </Col>
             </Row>
-        </Container> 
+        </div> 
     );
   }
   
