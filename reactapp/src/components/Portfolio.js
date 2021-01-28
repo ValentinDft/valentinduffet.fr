@@ -34,7 +34,7 @@ function Portfolio() {
             <Row className="block-portfolio">
                 
                 
-                <Col xs={18} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="500">
+                <Col xs={24} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="500">
                     <img src={logoShakti} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One', padding: "0px 5px"}}>Massage Shakti Ardèche</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding: "0px 20px", textAlign: "justify"}}>
@@ -61,7 +61,7 @@ function Portfolio() {
                     </Row>
                 </Col>
             
-                <Col xs={18} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
+                <Col xs={24} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="700">
                     <img src={logoPortfolio} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding:"0px 20px" , textAlign: "justify"}}>
@@ -93,7 +93,7 @@ function Portfolio() {
                     </Row>
                 </Col>
                                    
-                <Col xs={18} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="900">
+                <Col xs={24} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="900">
                     <img src={logoWeWorkHome} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>

@@ -18,7 +18,7 @@ function Presentation() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col span={24} style={{textAlign: "center"}}>
+                    <Col span={24} style={{textAlign: "center"}} className="header-title">
                         <Animated animationIn="slideInUp" animationInDuration="1500" isVisible={true}>
                             <h1>Valentin Duffet</h1>
                             <h3 style={{color: "#c23616"}}>
