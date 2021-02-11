@@ -35,6 +35,15 @@ function Presentation() {
                             <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
                         </div>
                     </div>
+                    <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
+                        <div className="flip">
+                            <a href="https://res.cloudinary.com/valent-cloud/image/upload/v1612978324/CV_D%C3%A9veloppeur_Web_JS_Junior_DUFFET_Valentin_kvtix2.pdf" target="_blank">
+                                <div class="front">VOIR</div>
+                                <div class="back">MON CV</div>
+                            </a>
+                        </div>
+                    </div>
+                    
                     
                 </Col>
             </Row>
