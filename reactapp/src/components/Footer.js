@@ -4,6 +4,7 @@ import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import up from '../up.png'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +13,15 @@ import "aos/dist/aos.css";
 
 function Footer() {
     return (
-        <div style={{marginTop: "5%"}}>
+        <div style={{marginTop: "3%"}}>
+            <Row>
+                <Col span={24} style={{display: "flex", justifyContent: "flex-end", padding: "20px"}}>
+                    <div data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
+                        <img src={up} style={{height: "50px", width: "50px", cursor: "pointer"}} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}></img>
+                    </div>
+                    
+                </Col> 
+            </Row> 
             <Row>
                 <Col span={24} style={{display: "flex", justifyContent: "center"}}>
                     <div data-aos="fade-down" data-aos-delay="1500" data-aos-delay="400">
@@ -24,12 +33,15 @@ function Footer() {
                         <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                     </div>
                 </Col>
+                
             </Row>
             <Row>
                 <Col span={24} style={{display: "flex", justifyContent: "center"}}>
-                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "4%"}}>© 2021 Valentin Duffet</h6>
+                    <h6 style={{color: "white", marginTop: "1%", marginBottom: "5%"}}>© 2021 Valentin Duffet</h6>
                 </Col>
             </Row>
+           
+            
         </div> 
     );
   }

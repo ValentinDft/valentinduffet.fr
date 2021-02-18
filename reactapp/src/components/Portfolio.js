@@ -66,7 +66,7 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="600">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -105,7 +105,7 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1500" data-aos-delay="900">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="900">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
