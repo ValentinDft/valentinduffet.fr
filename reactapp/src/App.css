@@ -10,6 +10,8 @@ h1{
     font-family: 'Nerko One', cursive;
 }
 
+/* ----------------------------------------HEADER---------------------------------------------- */
+
 .header{
     position: relative;
     width: 100%;
@@ -28,13 +30,58 @@ h1{
     background-attachment: fixed
 }
 
+/* Transformation photo profil header */
+.mask{
+    --uiMaskClipPath: var(--maskClipPath);
+    box-sizing: var(--maskBoxSizing, border-box);
+    display: var(--maskDisplay, inline-flex);
+    padding: var(--maskStrokeThickness, 0px);
+    clip-path: var(--uiMaskClipPath);
+    --maskStrokeColor: #ecebef;
+  --maskStrokeThickness: 5px;
+}
+  
+.mask__img{
+    max-width: 100%;
+    display: block;
+    clip-path: var(--uiMaskClipPath);
+    filter: grayscale(1) opacity(1);
+}
+
+.mask__img:hover{
+    filter: grayscale(0) opacity(1);
+    border-radius: 30px;
+}
+  
+.mask, 
+.mask__img{
+    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+}
+
+.mask_type1{
+    --maskClipPath: polygon(0 10%, 10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%);
+}
+  
+.mask_type1-a2{
+    --maskAnimationDuration: .5s;
+}
+  
+.mask_type1-a2:hover, 
+.mask_type1-a2:focus{
+    --maskClipPath: polygon(0 0, 90% 0, 100% 0, 100% 90%, 100% 100%, 10% 100%, 0 100%, 0 10%); 
+}
+
+/* ----------------------------------------PRESENTATION---------------------------------------------- */
+
+/* Bouton CV */
 .flip {
     
     width: 160px;
     height: 48px;
     perspective: 500px;
-  }
-  .flip a {
+}
+  
+.flip a {
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
@@ -46,9 +93,10 @@ h1{
     transform: translateZ(-25px);
     transition: transform 0.3s;
     cursor: pointer;
-  }
-  .flip a .front,
-  .flip a .back {
+}
+
+.flip a .front,
+.flip a .back {
     margin: 0;
     width: 160px;
     height: 48px;
@@ -56,19 +104,22 @@ h1{
     position: absolute;
     text-align: center;
     letter-spacing: 0.4em;
-  }
-  .flip a .front {
+}
+
+.flip a .front {
     background-color: #222;
     color: #fff;
     transform: rotateY(0) translateZ(24px);
-  }
-  .flip a .back {
+}
+
+.flip a .back {
     background-color: rgba(255,255,255,0);
     color: rgba(34,34,34,0);
     transform: rotateX(90deg) translateZ(24px);
     overflow: hidden;
-  }
-  .flip a .back:after {
+}
+
+.flip a .back:after {
     content: '';
     position: absolute;
     top: -32%;
@@ -79,23 +130,29 @@ h1{
     transform: rotate(8deg);
     transition: all 0.5s ease;
     transition-delay: 0.15s;
-  }
-  .flip a:hover {
+}
+
+.flip a:hover {
     transform: translateZ(-24px) rotateX(-90deg);
-  }
-  .flip a:hover .front {
+}
+
+.flip a:hover .front {
     background: #000;
     transition: all 0.8s ease;
-  }
-  .flip a:hover .back {
+}
+
+.flip a:hover .back {
     color: #222;
     transition: color 0.4s linear;
     background: white;
     border: 1px solid black;
-  }
-  .flip a:hover .back:after {
+}
+
+.flip a:hover .back:after {
     transform: rotate(6deg) translate(100px, -18px);
-  }
+}
+
+/* ----------------------------------------EDUCATION---------------------------------------------- */
 
 .block-education-right{
     width: auto;
@@ -145,6 +202,8 @@ h1{
     
 }
 
+/* ----------------------------------------COMPETENCES---------------------------------------------- */
+
 .block-competences{
     width: auto;
     height: auto;
@@ -154,6 +213,8 @@ h1{
     text-align: center;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
+
+/* ----------------------------------------PORTFOLIO---------------------------------------------- */
 
 .block-portfolio{
     width: auto;
@@ -206,6 +267,8 @@ h1{
 .img-portfolio{
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(0.35, black), color-stop(0.5, black), color-stop(0.65, black), color-stop(0.85, rgba(0, 0, 0, 0.6)), color-stop(1, transparent));  
 }
+
+/* ----------------------------------------CONTACT---------------------------------------------- */
 
 .card-contact{
     border-radius: 30px;
@@ -266,15 +329,29 @@ h1{
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 80px rgba(0, 0, 0, 0.2);
 }
 
+/* ----------------------------------------MEDIA QUERIES---------------------------------------------- */
+
 @media screen and (max-width:1470px){
 	.waves-bottom-presentation{
         bottom: -700px !important;
+    }
+    .block-education-right::before{
+        right: 94%;
+    }
+    .block-education-left::before{
+        left: 94%;
     }
 }
 
 @media screen and (max-width:1200px){
     .card-portfolio{
         margin-bottom: 20px;
+    }
+    .block-education-right::before{
+        right: 93%;
+    }
+    .block-education-left::before{
+        left: 93%;
     }
 }
 
@@ -284,6 +361,12 @@ h1{
     }
     .waves-bottom-presentation{
         bottom: -700px !important;
+    }
+    .block-education-right::before{
+        right: 92%;
+    }
+    .block-education-left::before{
+        left: 92%;
     }
 }
 
@@ -301,7 +384,12 @@ h1{
     .waves-bottom-presentation{
         bottom: -680px !important;
     }
-    
+    .block-education-right::before{
+        right: 90%;
+    }
+    .block-education-left::before{
+        left: 90%;
+    }
 }
 
 @media screen and (max-width:768px){
@@ -387,6 +475,8 @@ h1{
         margin-top: 60px;
     }
 }
+
+/* ----------------------------------------WAVES---------------------------------------------- */
 
 .waves-bottom-header {
     position: absolute;

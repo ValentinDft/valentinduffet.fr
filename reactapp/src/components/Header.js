@@ -13,8 +13,10 @@ function Presentation() {
         <div>
             <div className="header">
                 <Row>
-                    <Col span={24}>   
-                        <CardImg src={imgCard} style={{marginTop: "5%", marginBottom: "6%", borderRadius: "5%", width: "450px", display: "block", marginLeft: "auto", marginRight: "auto"}} className="img"/>
+                    <Col span={24} style={{display: "flex", justifyContent:"center", marginTop: "5%", marginBottom: "5%",}}>   
+                        <a className="mask mask_type1 mask_type1-a2" >
+                            <CardImg src={imgCard} style={{ width: "450px"}} className="img mask__img"/>
+                        </a>
                     </Col>
                 </Row>
                 <Row>
