@@ -4,6 +4,7 @@ import '../App.css';
 import logoShakti from "../captureMassageShakti.png"
 import logoPortfolio from "../portfolio.png"
 import logoWeWorkHome from "../weworkhome.png"
+import logoMovieCollection from "../movie_collection.png"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -113,7 +114,7 @@ function Portfolio() {
                         
                         <span className="url-projet">
                             
-                            <Tooltip placement="top" title={textIconSite}>
+                            <Tooltip placement="right" title={textIconSite}>
                                 <a href="https://www.weworkhome.io/" target="_blank" style={{color: "black", textDecoration: "none"}}>https://www.weworkhome.io/</a>
                             </Tooltip>
                         </span>
@@ -135,25 +136,44 @@ function Portfolio() {
                     <Tag>
                         Ant Design
                     </Tag>
-                    <br></br>
                     <Tag>
                         Stripe
                     </Tag>
                     <Tag>
                         Heroku Hosting
                     </Tag>
+                    <Row style={{marginTop: "45px"}}>
+                        <Col xs={24}>
+                            <Tooltip placement="right" title="Github privé">
+                                <FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon>
+                            </Tooltip>
+                        </Col>
+                    </Row>
                 </Col>
-                
-                {/* 
-                                   
-                <Col xs={24} md={11} lg={10} xl={7} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="900">
-                    <img src={logoWeWorkHome} style={{width: "85%", borderRadius: "10px"}} className="img-portfolio"></img>
-                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome</h2>
+               
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <div className="header-card-portfolio">
+                        <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
+                        <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
+                        <span className="btn-bullet" style={{backgroundColor:"#5bcc8b"}}></span>
+                        
+                        <span className="url-projet">
+                            
+                            <Tooltip placement="right" title="Bientot en ligne">
+                                <span>http://localhost:3000/</span>
+                            </Tooltip>
+                        </span>
+                    </div>
+                    <img src={logoMovieCollection} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
+                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>The Movies Collection</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
-                        Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
+                        Web App de collection de films et de séries. Utilisation de l'api MovieDB pour récupérer les informations des films et séries les plus populaires actuellement et exploitation des données reçues de l'api.
                     </h3>
                     <Tag style={{marginTop: "15px"}}> 
                         <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                    </Tag>
+                    <Tag>
+                        Redux
                     </Tag>
                     <Tag>
                         Express JS
@@ -161,24 +181,17 @@ function Portfolio() {
                     <Tag>
                         Ant Design
                     </Tag>
-                    <br></br>
                     <Tag>
-                        Stripe
+                        MovieDB API
                     </Tag>
-                    <Tag>
-                        Heroku Hosting
-                    </Tag>
-                    <Row style={{marginTop: "50px"}}>
+                    <Row style={{marginTop: "45px"}}>
                         <Col xs={24}>
-                            <Tooltip placement="bottom" title={textIconSite}>
-                            <a href="https://www.weworkhome.io/" target="_blank"><FontAwesomeIcon icon={faLink} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                            <Tooltip placement="right" title={textIconGitHub}>
+                                <a href="https://github.com/ValentinDft/the_movies_collection" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>
-                </Col> */}
-                            
-                      
-               
+                </Col>
             </Row>
         </div>
         
