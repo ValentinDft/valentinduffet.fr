@@ -167,6 +167,15 @@ h1{
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 }
 
+.block-education-right:hover{
+    box-shadow: 0 80px 80px rgba(0, 0, 0, 0.2), 0px 0px 60px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(194,54,22,0.9);
+}
+
+.block-education-right:hover h4{
+    font-size: 25px;
+}
+
 .block-education-right::before{
     content: "";
     position: fixed;
@@ -189,6 +198,15 @@ h1{
     margin-left: 30px;
     padding: 10px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.block-education-left:hover{
+    box-shadow: 0 80px 80px rgba(0, 0, 0, 0.2), 0px 0px 60px rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(194,54,22,0.9);
+}
+
+.block-education-left:hover h4{
+    font-size: 25px;
 }
 
 .block-education-left::before{
@@ -394,11 +412,11 @@ h1{
 
 @media screen and (max-width:768px){
 	
-    .img
+    .mask__img
     {
         margin-left: 0;
         margin-right: 0;
-        width: 350px !important;
+        width: 300px !important;
         margin-bottom: 10% !important;
     }
     .timeline-desktop{
@@ -473,6 +491,27 @@ h1{
     }
     .header-title{
         margin-top: 60px;
+    }
+    .mask{
+        --uiMaskClipPath: none;
+        box-sizing: none;
+        display: var(--maskDisplay, inline-flex);
+        padding: none;
+        clip-path: none;
+        --maskStrokeColor: none;
+      --maskStrokeThickness: none;
+    }
+      
+    .mask__img{
+        max-width: 100%;
+        display: block;
+        clip-path: none;
+        filter: none;
+    }
+    
+    .mask__img:hover{
+        filter: none;
+        border-radius: none;
     }
 }
 

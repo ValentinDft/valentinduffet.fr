@@ -33,7 +33,7 @@ function Portfolio() {
                 </Col>
             </Row>
             <Row className="block-portfolio">
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="300">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp1" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="300">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -67,7 +67,7 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp1" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -106,7 +106,7 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="900">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="900">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -120,7 +120,7 @@ function Portfolio() {
                         </span>
                     </div>
                     <img src={logoWeWorkHome} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
-                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome</h2>
+                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome / Co-fondateur</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
                         Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
                     </h3>
@@ -151,7 +151,7 @@ function Portfolio() {
                     </Row>
                 </Col>
                
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>

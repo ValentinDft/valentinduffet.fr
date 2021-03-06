@@ -14,9 +14,9 @@ function Presentation() {
             <div className="header">
                 <Row>
                     <Col span={24} style={{display: "flex", justifyContent:"center", marginTop: "5%", marginBottom: "5%",}}>   
-                        <a className="mask mask_type1 mask_type1-a2" >
-                            <CardImg src={imgCard} style={{ width: "450px"}} className="img mask__img"/>
-                        </a>
+                        <div className="mask mask_type1 mask_type1-a2" >
+                            <CardImg src={imgCard} style={{ width: "450px"}} className="mask__img"/>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
