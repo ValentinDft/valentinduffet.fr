@@ -159,8 +159,8 @@ function Portfolio() {
                         
                         <span className="url-projet">
                             
-                            <Tooltip placement="right" title="Bientot en ligne">
-                                <span>http://localhost:3000/</span>
+                            <Tooltip placement="right" title={textIconSite}>
+                                <a href="https://movie-collection.valentinduffet.fr/" target="_blank" style={{color: "black", textDecoration: "none"}}>https://movie-collection.valentinduffet.fr/</a>
                             </Tooltip>
                         </span>
                     </div>
