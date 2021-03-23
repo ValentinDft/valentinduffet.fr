@@ -21,7 +21,7 @@ function Competences() {
         <div style={{marginTop: "5%", marginLeft: "15%", marginRight: "15%"}}>
             <Row>
                 <Col span={24}>
-                    <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
+                    <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb", mixBlendMode : "overlay"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
                     <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                 </Col>
             </Row>
