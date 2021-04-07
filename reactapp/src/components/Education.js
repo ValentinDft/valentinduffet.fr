@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import '../App.css';
+
+// Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
@@ -16,9 +17,6 @@ import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { Timeline } from 'antd';
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 
 function Education() {
     return (

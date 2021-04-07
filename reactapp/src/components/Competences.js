@@ -1,20 +1,18 @@
 import React from 'react';
 import { CardImg } from 'reactstrap';
 import { Row, Col } from 'antd';
-import '../App.css';
+
+// Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 import { faJs } from '@fortawesome/free-brands-svg-icons'
-import { faPhp } from '@fortawesome/free-brands-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
 import logoFront from "../front.png";
 import logoBack from "../back.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Competences() {
     return (

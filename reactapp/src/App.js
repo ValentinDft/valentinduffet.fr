@@ -1,11 +1,11 @@
 import './App.css';
-import NavbarTop from'./components/Navbar';
+// import NavbarTop from'./components/Navbar';
 import Header from'./components/Header';
 import Presentation from'./components/Presentation';
 import Education from'./components/Education';
 import Competences from'./components/Competences';
 import Portfolio from'./components/Portfolio';
-import Contact from'./components/Contact';
+// import Contact from'./components/Contact';
 import Footer from'./components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from "react";

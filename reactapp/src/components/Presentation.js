@@ -1,10 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-import '../App.css';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
+// Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -29,15 +26,15 @@ function Presentation() {
                     </div>
                     <div style={{display:"flex", justifyContent:"center"}}>
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-delay="400">
-                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "28px", marginRight: "5px", color: "black"}}></FontAwesomeIcon></a>
+                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "28px", marginRight: "5px", color: "black"}}></FontAwesomeIcon></a>
                         </div>
                         <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">  
-                            <a href="https://github.com/ValentinDft" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
+                            <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
                         </div>
                     </div>
                     <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
                         <div className="flip">
-                            <a href="https://res.cloudinary.com/valent-cloud/image/upload/v1612978324/CV_D%C3%A9veloppeur_Web_JS_Junior_DUFFET_Valentin_kvtix2.pdf" target="_blank">
+                            <a href="https://res.cloudinary.com/valent-cloud/image/upload/v1612978324/CV_D%C3%A9veloppeur_Web_JS_Junior_DUFFET_Valentin_kvtix2.pdf" target="_blank" rel="noopener noreferrer">
                                 <div class="front">VOIR</div>
                                 <div class="back">MON CV</div>
                             </a>

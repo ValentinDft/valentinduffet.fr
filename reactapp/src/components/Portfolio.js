@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tag, Tooltip, Col, Row } from 'antd';
-import '../App.css';
+
+// import img
 import logoShakti from "../captureMassageShakti.png"
 import logoPortfolio from "../portfolio.png"
 import logoWeWorkHome from "../weworkhome.png"
@@ -13,11 +14,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
 import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 import { faBootstrap } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Portfolio() {
     const textIconGitHub = <span>Github du projet</span>;
@@ -42,11 +39,11 @@ function Portfolio() {
                         <span className="url-projet">
                             
                             <Tooltip placement="top" title={textIconSite}>
-                                <a href="https://massageshaktiardeche.fr/" target="_blank" style={{color: "black", textDecoration: "none"}}> https://massageshaktiardeche.fr/</a>
+                                <a href="https://massageshaktiardeche.fr/" target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}> https://massageshaktiardeche.fr/</a>
                             </Tooltip>
                         </span>
                     </div>
-                    <img src={logoShakti} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
+                    <img src={logoShakti} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoShakti"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One', padding: "0px 5px"}}>Massage Shakti Ardèche</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding: "0px 20px", textAlign: "justify"}}>
                         Site web de massage en Ardèche pour un particulier, avec les prestations ainsi qu'un formulaire de contact.
@@ -61,7 +58,7 @@ function Portfolio() {
                     <Row style={{marginTop: "45px"}}>
                         <Col xs={24}>
                             <Tooltip placement="right" title={textIconGitHub}>
-                                <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                <a href="https://github.com/ValentinDft/Massage-Shakti" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>
@@ -76,11 +73,11 @@ function Portfolio() {
                         <span className="url-projet">
                             
                             <Tooltip placement="top" title={textIconSite}>
-                                <a href="https://valentinduffet.fr/" target="_blank" style={{color: "black", textDecoration: "none"}}>https://valentinduffet.fr/</a>
+                                <a href="https://valentinduffet.fr/" target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}>https://valentinduffet.fr/</a>
                             </Tooltip>
                         </span>
                     </div>
-                    <img src={logoPortfolio} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
+                    <img src={logoPortfolio} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoPortfolio"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding:"0px 20px" , textAlign: "justify"}}>
                         Portfolio en ligne réalisé avec React JS. Présentation de mon parcours, mes études ainsi que mes compétences acquises. 
@@ -100,7 +97,7 @@ function Portfolio() {
                     <Row style={{marginTop: "45px"}}>
                         <Col xs={24}>
                             <Tooltip placement="right" title={textIconGitHub}>
-                                <a href="https://github.com/ValentinDft/mon_portfolio" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                <a href="https://github.com/ValentinDft/mon_portfolio" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>
@@ -115,11 +112,11 @@ function Portfolio() {
                         <span className="url-projet">
                             
                             <Tooltip placement="right" title={textIconSite}>
-                                <a href="https://www.weworkhome.io/" target="_blank" style={{color: "black", textDecoration: "none"}}>https://www.weworkhome.io/</a>
+                                <a href="https://www.weworkhome.io/" target="_blank"  rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}>https://www.weworkhome.io/</a>
                             </Tooltip>
                         </span>
                     </div>
-                    <img src={logoWeWorkHome} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
+                    <img src={logoWeWorkHome} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoWeWorkHome"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome / Co-fondateur</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
                         Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
@@ -160,11 +157,11 @@ function Portfolio() {
                         <span className="url-projet">
                             
                             <Tooltip placement="right" title={textIconSite}>
-                                <a href="https://movie-collection.valentinduffet.fr/" target="_blank" style={{color: "black", textDecoration: "none"}}>https://movie-collection.valentinduffet.fr/</a>
+                                <a href="https://movie-collection.valentinduffet.fr/" target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}>https://movie-collection.valentinduffet.fr/</a>
                             </Tooltip>
                         </span>
                     </div>
-                    <img src={logoMovieCollection} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio"></img>
+                    <img src={logoMovieCollection} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoMovieCollection"></img>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>The Movies Collection</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
                         Web App de collection de films et de séries. Utilisation de l'api MovieDB pour récupérer les informations des films et séries les plus populaires actuellement et exploitation des données reçues de l'api.
@@ -187,7 +184,7 @@ function Portfolio() {
                     <Row style={{marginTop: "45px"}}>
                         <Col xs={24}>
                             <Tooltip placement="right" title={textIconGitHub}>
-                                <a href="https://github.com/ValentinDft/the_movies_collection" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                                <a href="https://github.com/ValentinDft/the_movies_collection" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>

@@ -1,11 +1,5 @@
 import React, {useState} from 'react';
 import { message, Col, Row, Form, Button } from 'antd';
-import '../App.css';
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-  
-    
 
 function Contact() {
     const [nom, setNom] = useState("");

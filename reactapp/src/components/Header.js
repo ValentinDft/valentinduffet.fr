@@ -1,11 +1,8 @@
 import React from 'react';
 import { CardImg } from 'reactstrap';
 import { Row, Col } from 'antd';
-import '../App.css';
 import {Animated} from "react-animated-css";
 import imgCard from '../IMG_5395.jpg';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Typical from "react-typical"
 
 function Presentation() {
