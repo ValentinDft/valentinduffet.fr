@@ -5,6 +5,7 @@ import { Col, Row } from 'antd';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGitlab } from '@fortawesome/free-brands-svg-icons'
 
 // import img
 import up from '../up.png'  
@@ -28,7 +29,11 @@ function Footer() {
                     </div>
                     <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">
                         
-                        <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                        <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb", marginRight: "5px"}}></FontAwesomeIcon></a>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">
+                        
+                        <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                     </div>
                 </Col>
                 
