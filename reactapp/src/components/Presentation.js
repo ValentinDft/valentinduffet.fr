@@ -32,11 +32,11 @@ function Presentation() {
                         <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">  
                             <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black", marginRight: "5px"}}></FontAwesomeIcon></a>
                         </div>
-                        <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">  
+                        <div data-aos="fade-up" data-aos-delay="2100" data-aos-delay="600">  
                             <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
                         </div>
                     </div>
-                    <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
+                    <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="3000" data-aos-delay="500">
                         <div className="flip">
                             <a href="https://res.cloudinary.com/valent-cloud/image/upload/v1612978324/CV_D%C3%A9veloppeur_Web_JS_Junior_DUFFET_Valentin_kvtix2.pdf" target="_blank" rel="noopener noreferrer">
                                 <div class="front">VOIR</div>

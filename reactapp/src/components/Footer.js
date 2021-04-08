@@ -31,7 +31,7 @@ function Footer() {
                         
                         <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb", marginRight: "5px"}}></FontAwesomeIcon></a>
                     </div>
-                    <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">
+                    <div data-aos="fade-down" data-aos-delay="2100" data-aos-delay="600">
                         
                         <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
                     </div>
