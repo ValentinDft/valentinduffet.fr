@@ -34,7 +34,7 @@ function Competences() {
                             <div data-aos="fade-down" data-aos-duration="1000" className="texte-competences">
                                 <h4>Les languages : </h4>
                                 <h5><FontAwesomeIcon icon={faHtml5} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
-                                    Html, JSX <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
+                                    Html <FontAwesomeIcon icon={faCss3Alt} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
                                     Css & <FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
                                     Javascript
                                 </h5> <br/>
@@ -60,7 +60,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Frameworks et Base de donnée: </h4>
                                 <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
-                                    Node.js, Express.js & MongoDB
+                                    Node.js, Express.js & MongoDB, Firebase
                                 </h5>
                             </div>
                         </Col> 

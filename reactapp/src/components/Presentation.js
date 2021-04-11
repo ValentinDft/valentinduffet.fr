@@ -19,9 +19,10 @@ function Presentation() {
                     <div data-aos="fade-up" data-aos-duration="2000">
                         <h4 style={{marginBottom: "5%", textAlign: "justify"}} className="texte-presentation">
                             Jeune développeur, passionné par les technologies du web. 
-                            J'ai appris à coder dés le lycée par simple curiosité, pour savoir comment était construit un site web. J'ai vraiment adoré ça. <br></br>
-                            Par la suite j'ai effectué un <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux)</span> que j'ai obtenus. <br></br>
-                            Et pour solidifier mes connaissances et mes compétences dans le développement web, j'ai effectué une <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}> 
+                            J'ai appris à coder dès le lycée par simple curiosité, pour comprendre la réalité du développement d'un site web.
+                            Une découverte qui m'a permis de m'épanouir dans un domaine extrênement enrichissant. <br></br>
+                            Par la suite j'ai obtenu un <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}>BTS SNIR (Systèmes Numériques informatique et Réseaux).</span> <br></br>
+                            Et pour consolider mes connaissances et mes compétences dans le développement web, j'ai effectué une <span style={{color: "#dff9fb", backgroundColor: "#c23616"}}> 
                             formation de développeur web fullstack Javascript à La Capsule,</span> sur la stack MERN (MongoDB, Express, React Js, Node Js)
                         </h4>
                     </div>
