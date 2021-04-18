@@ -39,7 +39,7 @@ function Presentation() {
                     </div>
                     <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="3000" data-aos-delay="500">
                         <div className="flip">
-                            <a href="https://res.cloudinary.com/valent-cloud/image/upload/v1612978324/CV_D%C3%A9veloppeur_Web_JS_Junior_DUFFET_Valentin_kvtix2.pdf" target="_blank" rel="noopener noreferrer">
+                            <a href="https://firebasestorage.googleapis.com/v0/b/portfolio-8d284.appspot.com/o/CV%20D%C3%A9veloppeur%20web%20junior%20DUFFET%20Valentin.pdf?alt=media&token=2bf0fdfe-93fb-47d3-bbf2-42bdfbe011c7" target="_blank" rel="noopener noreferrer">
                                 <div class="front">VOIR</div>
                                 <div class="back">MON CV</div>
                             </a>
