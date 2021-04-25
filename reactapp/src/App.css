@@ -509,6 +509,10 @@ h1{
         filter: none;
         border-radius: none;
     }
+    .img-header{
+        width: 300px !important;
+        margin-top: 15%;
+    }
 }
 
 /* ----------------------------------------WAVES---------------------------------------------- */
@@ -519,29 +523,12 @@ h1{
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
-}
-
-.waves-bottom-header svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 35px);
-    height: 100px;
 }
 
 .waves-bottom-presentation {
     position: absolute;
-    bottom: -730px;
+    bottom: -225%;
     left: 0;
     width: 100%;
     overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.waves-bottom-presentation svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 90px);
-    height: 90px;
 }

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGitlab } from '@fortawesome/free-brands-svg-icons'
+import { faChevronCircleUp } from '@fortawesome/free-solid-svg-icons'
 
 // import img
 import up from '../up.png'  
@@ -16,7 +17,7 @@ function Footer() {
             <Row>
                 <Col span={24} style={{display: "flex", justifyContent: "flex-end", padding: "20px"}}>
                     <div data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
-                        <img src={up} style={{height: "50px", width: "50px", cursor: "pointer"}} alt="up" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}></img>
+                        <FontAwesomeIcon icon={faChevronCircleUp} style={{fontSize: "35px", cursor: "pointer", color: "#dff9fb"}} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}></FontAwesomeIcon>
                     </div>
                     
                 </Col> 

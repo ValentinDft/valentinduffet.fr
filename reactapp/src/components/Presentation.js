@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import wave from "../wave-presentation.svg"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -49,11 +50,9 @@ function Presentation() {
                     
                 </Col>
             </Row>
-            <div className="waves-bottom-presentation">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path fill="white" d="M0,32L60,32C120,32,240,32,360,64C480,96,600,160,720,165.3C840,171,960,117,1080,85.3C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-                </svg>
-            </div>
+            <Row className="waves-bottom-presentation">
+                <img src={wave} style={{width: "100%"}}/>
+            </Row>
         </div>
         
         
