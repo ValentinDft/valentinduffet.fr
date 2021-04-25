@@ -29,13 +29,13 @@ function Presentation() {
                     </div>
                     <div style={{display:"flex", justifyContent:"center"}}>
                         <div data-aos="fade-up" data-aos-delay="1500" data-aos-delay="400">
-                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "28px", marginRight: "5px", color: "black"}}></FontAwesomeIcon></a>
+                            <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "28px", marginRight: "5px", color: "black"}} className="picto"></FontAwesomeIcon></a>
                         </div>
                         <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">  
-                            <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black", marginRight: "5px"}}></FontAwesomeIcon></a>
+                            <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "28px", color: "black", marginRight: "5px"}} className="picto"></FontAwesomeIcon></a>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="2100" data-aos-delay="600">  
-                            <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "28px", color: "black"}}></FontAwesomeIcon></a>
+                            <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "28px", color: "black"}} className="picto"></FontAwesomeIcon></a>
                         </div>
                     </div>
                     <div style={{display: "flex", justifyContent: "center", marginTop:"40px"}} data-aos="fade-up" data-aos-delay="3000" data-aos-delay="500">

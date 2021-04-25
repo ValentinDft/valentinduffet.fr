@@ -17,7 +17,7 @@ function Footer() {
             <Row>
                 <Col span={24} style={{display: "flex", justifyContent: "flex-end", padding: "20px"}}>
                     <div data-aos="fade-up" data-aos-delay="1800" data-aos-delay="500">
-                        <FontAwesomeIcon icon={faChevronCircleUp} style={{fontSize: "35px", cursor: "pointer", color: "#dff9fb"}} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faChevronCircleUp} style={{fontSize: "35px", cursor: "pointer", color: "#dff9fb"}} className="picto picto-footer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}></FontAwesomeIcon>
                     </div>
                     
                 </Col> 
@@ -25,16 +25,16 @@ function Footer() {
             <Row>
                 <Col span={24} style={{display: "flex", justifyContent: "center"}}>
                     <div data-aos="fade-down" data-aos-delay="1500" data-aos-delay="400">
-                        <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                        <a href="https://www.linkedin.com/in/valentin-duffet/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{fontSize: "25px", marginRight: "5px", color: "#dff9fb"}} className="picto picto-footer"></FontAwesomeIcon></a>
                         
                     </div>
                     <div data-aos="fade-down" data-aos-delay="1800" data-aos-delay="500">
                         
-                        <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb", marginRight: "5px"}}></FontAwesomeIcon></a>
+                        <a href="https://github.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "#dff9fb", marginRight: "5px"}} className="picto picto-footer"></FontAwesomeIcon></a>
                     </div>
                     <div data-aos="fade-down" data-aos-delay="2100" data-aos-delay="600">
                         
-                        <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "25px", color: "#dff9fb"}}></FontAwesomeIcon></a>
+                        <a href="https://gitlab.com/ValentinDft" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGitlab} style={{fontSize: "25px", color: "#dff9fb"}} className="picto picto-footer"></FontAwesomeIcon></a>
                     </div>
                 </Col>
                 

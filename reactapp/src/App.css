@@ -532,3 +532,16 @@ h1{
     width: 100%;
     overflow: hidden;
 }
+
+.picto{
+    transition: transform 0.8s ease, color 0.8s ease;
+}
+
+.picto:hover{
+    transform: scale(1.2);
+    color: #C23616 !important;
+}
+
+.picto-footer:hover{
+    color: #38373D !important;
+}
