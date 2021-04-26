@@ -511,6 +511,7 @@ h1{
     }
     .img-header{
         width: 300px !important;
+        height: 200px;
         margin-top: 15%;
     }
 }
