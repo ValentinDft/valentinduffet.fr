@@ -3,6 +3,7 @@ import './App.css';
 import Header from'./components/Header';
 import Presentation from'./components/Presentation';
 import Education from'./components/Education';
+import Experience from "./components/Experience/Experience"
 import Competences from'./components/Competences';
 import Portfolio from'./components/Portfolio';
 // import Contact from'./components/Contact';
@@ -29,7 +30,7 @@ function App() {
         <Presentation/>
       <div className="bg-gradient">
         <Education/>
-        
+        <Experience/>
         <Competences/>
         
         <Portfolio/>

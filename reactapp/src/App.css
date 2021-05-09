@@ -201,6 +201,26 @@ h1{
     
 }
 
+/* ----------------------------------------EXPERIENCE---------------------------------------------- */
+
+.ruban-title
+{
+  background-color: #c23516e0;
+  position: absolute;
+  color: white;
+  right: -10px;
+  top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 80%;
+}
+
+.ruban-date
+{
+  top: 180px;
+  width: 60%;
+}
+
 /* ----------------------------------------COMPETENCES---------------------------------------------- */
 
 .block-competences{
