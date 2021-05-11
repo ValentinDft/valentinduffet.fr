@@ -9,7 +9,7 @@ export default function Experience() {
             <Row>
                 <Col span={24}>
                     <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb", mixBlendMode : "overlay"}} className="titre-education">EXPERIENCE</h1>
-                    <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
+                    <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "2%"}}></hr>
                 </Col>
             </Row>
             <Row style={{display: "flex", justifyContent: "space-around"}}>

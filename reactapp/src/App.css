@@ -212,13 +212,7 @@ h1{
   top: 10px;
   padding: 5px 10px;
   border-radius: 5px;
-  max-width: 80%;
-}
-
-.ruban-date
-{
-  top: 180px;
-  width: 60%;
+  max-width: 99%;
 }
 
 /* ----------------------------------------COMPETENCES---------------------------------------------- */
