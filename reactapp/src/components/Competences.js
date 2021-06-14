@@ -40,7 +40,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Frameworks et outils: </h4>
                                 <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
-                                    React JS, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
+                                    React JS, React Native, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
                                     Bootstrap & Ant-design
                                 </h5>
                             </div>
@@ -60,7 +60,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Frameworks et Base de donnée: </h4>
                                 <h5><FontAwesomeIcon icon={faNodeJs} style={{fontSize: "25px", color: "#0098FF"}} className="icon-competences"></FontAwesomeIcon> 
-                                    Node.js, Express.js & MongoDB, Firebase
+                                    Node.js, Express.js & MongoDB, Firestore
                                 </h5>
                             </div>
                         </Col> 
