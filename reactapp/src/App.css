@@ -560,3 +560,18 @@ h1{
 .picto-footer:hover{
     color: #38373D !important;
 }
+
+#avatar{
+    animation: avatar 1s ease;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes avatar {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
