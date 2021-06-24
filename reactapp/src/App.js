@@ -8,6 +8,7 @@ import Competences from'./components/Competences';
 import Portfolio from'./components/Portfolio';
 // import Contact from'./components/Contact';
 import Footer from'./components/Footer';
+import Loading from './components/Loading';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from "react";
 import AOS from "aos";
@@ -24,8 +25,8 @@ function App() {
     <div>
       
         {/* <NavbarTop/> */}
-
-        <Header/>
+        <Loading/>
+        {/* <Header/>
 
         <Presentation/>
       <div className="bg-gradient">
@@ -35,10 +36,10 @@ function App() {
         
         <Portfolio/>
 
-        {/* <Contact/> */}
+        <Contact/>
 
         <Footer/>
-      </div>
+      </div> */}
     </div>
     
   );

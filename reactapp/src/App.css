@@ -562,7 +562,7 @@ h1{
 }
 
 #avatar{
-    animation: avatar 1s ease;
+    animation: avatar 3s linear infinite;
     transform-origin: center;
     transform-box: fill-box;
 }
@@ -573,5 +573,78 @@ h1{
     }
     to {
         transform: rotateY(360deg);
+    }
+}
+
+#svg_react{
+    animation: logoReact 4s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logoReact {
+    from {
+        transform: translate(-230px) rotate(0deg);
+    }
+    to {
+        transform: translate(250px) rotate(360deg);
+    }
+}
+
+#js{
+    animation: logoJS 3s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logoJS {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#html{
+    animation: logoHtml 2s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logoHtml {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#css{
+    animation: logoCss 4s linear infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes logoCss {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+#car_layout{
+    animation: car 3s linear infinite;
+}
+
+@keyframes car {
+    from {
+        transform: translate(-180px);
+    }
+    to {
+        transform: translate(1350px);
     }
 }
