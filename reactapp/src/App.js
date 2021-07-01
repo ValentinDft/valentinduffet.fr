@@ -10,23 +10,31 @@ import Portfolio from'./components/Portfolio';
 import Footer from'./components/Footer';
 import Loading from './components/Loading';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function App() {
+
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   }, []);
 
-  return (
+  let goApp = (etat) => {
+    setLoader(!etat);
+  }
+
+  return loader ? (
+    <Loading handleParent={goApp}/>
+  ) : 
+  (
     <div>
       
         {/* <NavbarTop/> */}
-        <Loading/>
-        {/* <Header/>
+        <Header/>
 
         <Presentation/>
       <div className="bg-gradient">
@@ -36,13 +44,13 @@ function App() {
         
         <Portfolio/>
 
-        <Contact/>
+        {/* <Contact/> */}
 
         <Footer/>
-      </div> */}
+      </div>
     </div>
     
-  );
+  )
 }
 
 export default App;
