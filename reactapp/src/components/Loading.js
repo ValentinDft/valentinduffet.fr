@@ -2,21 +2,8 @@ import React, {useEffect, useState} from 'react'
 
 export default function Loading(props) {
 
-    const [etatMessageClick, setEtatMessageClick] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setEtatMessageClick(true);
-        }, 3000)
-    }, [])
-
-    let goPortfolio = () => {
-        props.handleParent(true);
-    }
-
     return (
         <div style={{height: "100vh", backgroundColor: "#2d3436"}}>
-            {etatMessageClick && <h6 className="msgCar" style={{color: "white", position: "absolute", top: "20%", left: "70%"}}>Un peu d'aide ? Cliquez sur la voiture</h6>}
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", paddingTop: "15%"}}>
                 <svg width="737" height="117" viewBox="0 0 737 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Bienvenue">
@@ -43,7 +30,7 @@ export default function Loading(props) {
             </div>
             <div style={{display: "flex", justifyContent: "start", paddingTop: "5%"}}>
             <svg viewBox="0 0 1333 113" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="car_layout" style={{cursor: "pointer"}} onClick={goPortfolio}>
+<g id="car_layout">
 <g id="car" >
 <path id="Vector" d="M161.14 68.0089C157.384 64.8912 149.502 60.4541 135.064 60.4541H132.839L104.374 44.7211C101.132 42.9291 97.5974 42 94.0198 42H69.2629C67.1519 42 65.0641 42.5076 63.1248 43.4927L37.4224 56.5396C35.76 57.3839 33.9701 57.8191 32.1613 57.8191H30.4515C27.9931 57.8178 26 60.1785 26 63.0905V79.7812C26 82.3303 27.5382 84.5139 29.6555 84.9691L50.4842 89.4548V92.0911H159.549C162.007 92.0911 164 89.7304 164 86.8185V74.5049C164 71.911 162.933 69.4967 161.14 68.0089Z" fill="#FF8086"/>
 <path id="Vector_2" d="M69.6406 47.2726H87.7444V60.4541H61.0198C56.8757 60.4541 55.6523 53.7649 59.4258 51.7334L65.9566 48.2179C67.1137 47.5944 68.3698 47.2726 69.6406 47.2726V47.2726Z" fill="#E5646E"/>

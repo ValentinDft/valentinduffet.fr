@@ -21,14 +21,19 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000)
+
   }, []);
 
-  let goApp = (etat) => {
-    setLoader(!etat);
-  }
+  // let goApp = (etat) => {
+  //   setLoader(!etat);
+  // }
 
   return loader ? (
-    <Loading handleParent={goApp}/>
+    <Loading />
   ) : 
   (
     <div>

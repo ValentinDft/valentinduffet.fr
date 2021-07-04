@@ -637,7 +637,7 @@ h1{
 }
 
 #car_layout{
-    animation: car 4s linear infinite;
+    animation: car 2s linear infinite;
 }
 
 @keyframes car {
@@ -647,8 +647,4 @@ h1{
     to {
         transform: translate(1350px);
     }
-}
-
-.msgCar{
-    transform: rotate(30deg);
 }
