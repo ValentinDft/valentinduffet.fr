@@ -43,7 +43,11 @@ function Portfolio() {
                             </Tooltip>
                         </span>
                     </div>
-                    <img src={logoShakti} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoShakti"></img>
+
+                    <div style={{overflow: "hidden"}}>
+                        <img src={logoShakti} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoShakti"></img>
+                    </div>
+                    
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One', padding: "0px 5px"}}>Massage Shakti Ardèche</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding: "0px 20px", textAlign: "justify"}}>
                         Site web de massage en Ardèche pour un particulier, avec les prestations ainsi qu'un formulaire de contact.
@@ -77,7 +81,9 @@ function Portfolio() {
                             </Tooltip>
                         </span>
                     </div>
+                    <div style={{overflow: "hidden"}}>
                     <img src={logoPortfolio} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoPortfolio"></img>
+                    </div>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Portfolio</h2>
                     <h3 style={{fontSize: "15px", marginTop: "25px", color: "#bdc3c7", padding:"0px 20px" , textAlign: "justify"}}>
                         Portfolio en ligne réalisé avec React JS. Présentation de mon parcours, mes études ainsi que mes compétences acquises. 
@@ -116,7 +122,9 @@ function Portfolio() {
                             </Tooltip>
                         </span>
                     </div>
+                    <div style={{overflow: "hidden"}}>
                     <img src={logoWeWorkHome} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoWeWorkHome"></img>
+                    </div>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>WeWorkHome / Co-fondateur</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
                         Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
@@ -161,7 +169,9 @@ function Portfolio() {
                             </Tooltip>
                         </span>
                     </div>
+                    <div style={{overflow: "hidden"}}>
                     <img src={logoMovieCollection} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoMovieCollection"></img>
+                    </div>
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>The Movies Collection</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
                         Web App de collection de films et de séries. Utilisation de l'api MovieDB pour récupérer les informations des films et séries les plus populaires actuellement et exploitation des données reçues de l'api.
