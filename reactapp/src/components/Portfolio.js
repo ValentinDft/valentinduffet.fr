@@ -6,6 +6,7 @@ import logoShakti from "../captureMassageShakti.png"
 import logoPortfolio from "../portfolio.png"
 import logoWeWorkHome from "../weworkhome.png"
 import logoMovieCollection from "../movie_collection.png"
+import captureTooDoList from "../captureTooDoList.gif"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -199,6 +200,30 @@ function Portfolio() {
                         </Col>
                     </Row>
                 </Col>
+
+                <Col xs={11} md={11} lg={9} xl={7} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
+                    
+                    <img src={captureTooDoList} style={{width: "100%", height: "730px", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio-alt" alt="logoMovieCollection"></img>
+                    
+                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Too Do List</h2>
+                    <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
+                        Application React Native de gestion de tâche simple. Ajout et suppression des tâches de la journée.
+                    </h3>
+                    <Tag style={{marginTop: "15px"}}> 
+                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React Native 
+                    </Tag>
+                    <Tag>
+                        Expo
+                    </Tag>
+                    <Row style={{marginTop: "45px"}}>
+                        <Col xs={24}>
+                            <Tooltip placement="right" title={textIconGitHub}>
+                                <a href="https://github.com/ValentinDft/tooDoList_ReactNative" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                            </Tooltip>
+                        </Col>
+                    </Row>
+                </Col>
+                
             </Row>
         </div>
         
