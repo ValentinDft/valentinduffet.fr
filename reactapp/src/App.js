@@ -16,15 +16,15 @@ import "aos/dist/aos.css";
 
 function App() {
 
-  const [loader, setLoader] = useState(true);
+  // const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     AOS.init();
     AOS.refresh();
 
-    setTimeout(() => {
-      setLoader(false);
-    }, 2000)
+    // setTimeout(() => {
+    //   setLoader(false);
+    // }, 2000)
 
   }, []);
 
@@ -32,10 +32,10 @@ function App() {
   //   setLoader(!etat);
   // }
 
-  return loader ? (
-    <Loading />
-  ) : 
-  (
+  // return loader ? (
+  //   <Loading />
+  // ) : 
+  return (
     <div>
       
         {/* <NavbarTop/> */}
