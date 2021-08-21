@@ -7,6 +7,7 @@ import logoPortfolio from "../portfolio.png"
 import logoWeWorkHome from "../weworkhome.png"
 import logoMovieCollection from "../movie_collection.png"
 import captureTooDoList from "../captureTooDoList.gif"
+import captureSneakersApp from "../captureSneakersApp.gif"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -110,7 +111,7 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="900">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="300">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -157,7 +158,7 @@ function Portfolio() {
                     </Row>
                 </Col>
                
-                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
                     <div className="header-card-portfolio">
                         <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
                         <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
@@ -201,9 +202,9 @@ function Portfolio() {
                     </Row>
                 </Col>
 
-                <Col xs={11} md={11} lg={9} xl={7} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="1200">
+                <Col xs={24} md={11} lg={9} xl={7} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="300">
                     
-                    <img src={captureTooDoList} style={{width: "100%", height: "730px", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio-alt" alt="logoMovieCollection"></img>
+                    <img src={captureTooDoList} style={{width: "100%", height: "730px", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio-alt" alt="too do list"></img>
                     
                     <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Too Do List</h2>
                     <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
@@ -219,6 +220,29 @@ function Portfolio() {
                         <Col xs={24}>
                             <Tooltip placement="right" title={textIconGitHub}>
                                 <a href="https://github.com/ValentinDft/tooDoList_ReactNative" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                            </Tooltip>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xs={24} md={11} lg={9} xl={7} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
+                    
+                    <img src={captureSneakersApp} style={{width: "100%", height: "730px", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio-alt" alt="sneakers app"></img>
+                    
+                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Shop My Sneakers</h2>
+                    <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
+                        Application React Native. Front-end d'une app de Sneakers, affichage des données en liste et navigation vers la page de détail du produit.
+                    </h3>
+                    <Tag style={{marginTop: "15px"}}> 
+                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React Native 
+                    </Tag>
+                    <Tag>
+                        Expo
+                    </Tag>
+                    <Row style={{marginTop: "45px"}}>
+                        <Col xs={24}>
+                            <Tooltip placement="right" title={textIconGitHub}>
+                                <a href="https://github.com/ValentinDft/sneakersApp_React-Native" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>
