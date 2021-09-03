@@ -50,9 +50,9 @@ function Presentation() {
                     
                 </Col>
             </Row>
-            <Row className="waves-bottom-presentation">
+            {/* <Row className="waves-bottom-presentation">
                 <img src={wave} style={{width: "100%"}}/>
-            </Row>
+            </Row> */}
         </div>
         
         

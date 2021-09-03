@@ -1,6 +1,7 @@
 import React from 'react';
 import { CardImg } from 'reactstrap';
 import { Row, Col } from 'antd';
+import { Controller, Scene } from 'react-scrollmagic';
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,9 +20,15 @@ function Competences() {
         <div style={{marginTop: "5%", marginLeft: "15%", marginRight: "15%"}}>
             <Row>
                 <Col span={24}>
-                    <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb", mixBlendMode : "overlay"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
-                    <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
                     
+                    <Controller>
+                    <Scene duration={200} pin>
+                        <div>
+                            <h1 style={{textAlign: "center", marginTop: "1%", marginBottom: "1%", color: "#dff9fb", mixBlendMode : "overlay"}}>COMPETENCES <FontAwesomeIcon icon={faCode} style={{textAlign: "center", fontSize: "35px"}}></FontAwesomeIcon></h1>
+                            <hr style={{borderTop: "8px solid #c23616", borderRadius: "5px", width: "18%", marginBottom: "5%"}}></hr>
+                        </div>
+                    </Scene>
+                </Controller>
                 </Col>
                 <Col span={24} style={{display: "flex", justifyContent: "center"}}>
                 <svg width="200" height="200" viewBox="0 0 1108 732" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,10 +207,10 @@ function Competences() {
                                     Css & <FontAwesomeIcon icon={faJs} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon> 
                                     Javascript
                                 </h5> <br/>
-                                <h4>Frameworks et outils: </h4>
+                                <h4>Librairies et outils: </h4>
                                 <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
-                                    React JS, React Native, Redux <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
-                                    Bootstrap & Ant-design
+                                    React JS, React Native, Redux, <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
+                                    Bootstrap, Ant-design, JEST, Styled-components...
                                 </h5>
                             </div>
                         </Col> 

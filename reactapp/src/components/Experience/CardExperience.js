@@ -11,7 +11,7 @@ export default function CardExperience() {
             date: "Janvier 2021 - Février 2021", entreprise: "La Capsule Academy", tag: ["#html", "#css", "#javascript", "#react.js", "#mongoDB"]
         },
         { titre: "Stage développeur React.js", description: "Site web fournissant des outils pour animer des ateliers interactifs pour les coachs d'entreprise",
-            date: "Mars 2021 - Juillet 2021", entreprise: "Butterfly&Co", tag: ["#html", "#css", "#javascript", "#react.js", "#firebase"]
+            date: "Avril 2021 - Juillet 2021", entreprise: "Butterfly&Co", tag: ["#html", "#css", "#javascript", "#react.js", "#firebase", "#styled-components"]
         }
     ])
 
