@@ -209,8 +209,7 @@ function Competences() {
                                 </h5> <br/>
                                 <h4>Librairies et outils: </h4>
                                 <h5><FontAwesomeIcon icon={faReact} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
-                                    React JS, React Native, Redux, <FontAwesomeIcon icon={faBootstrap} style={{fontSize: "25px", color: "#00D172"}} className="icon-competences"></FontAwesomeIcon>
-                                    Bootstrap, Ant-design, JEST, Styled-components...
+                                    React.js, React Native, Redux, Next.js, Ant-design, JEST, Styled-components...
                                 </h5>
                             </div>
                         </Col> 

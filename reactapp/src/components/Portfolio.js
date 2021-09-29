@@ -9,6 +9,7 @@ import logoWeWorkHome from "../weworkhome.png"
 import logoMovieCollection from "../movie_collection.png"
 import captureTooDoList from "../captureTooDoList.gif"
 import captureSneakersApp from "../captureSneakersApp.gif"
+import captureMorningNews from "../captureMorningNews.PNG"
 
 // Import FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -99,10 +100,10 @@ function Portfolio() {
                         Portfolio en ligne réalisé avec React JS. Présentation de mon parcours, mes études ainsi que mes compétences acquises. 
                     </h3>
                     <Tag style={{marginTop: "25px"}}> 
-                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React.js
                     </Tag>
                     <Tag>
-                        Express JS
+                        Express
                     </Tag>
                     <Tag>
                         Ant Design
@@ -140,13 +141,13 @@ function Portfolio() {
                         Développeur front-end, projet avec trois développeurs. JobBoard spécialisé dans le télétravail, recherche d'emploi pour les candidats et poste d'annonce pour les recruteurs.
                     </h3>
                     <Tag style={{marginTop: "15px"}}> 
-                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React.js 
                     </Tag>
                     <Tag>
                         Redux
                     </Tag>
                     <Tag>
-                        Express JS
+                        Express
                     </Tag>
                     <Tag>
                         Ant Design
@@ -187,13 +188,13 @@ function Portfolio() {
                         Web App de collection de films et de séries. Utilisation de l'api MovieDB pour récupérer les informations des films et séries les plus populaires actuellement et exploitation des données reçues de l'api.
                     </h3>
                     <Tag style={{marginTop: "15px"}}> 
-                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React JS 
+                        <FontAwesomeIcon icon={faReact} style={{fontSize: "14px"}}></FontAwesomeIcon> React.js 
                     </Tag>
                     <Tag>
                         Redux
                     </Tag>
                     <Tag>
-                        Express JS
+                        Express
                     </Tag>
                     <Tag>
                         Ant Design
@@ -251,6 +252,47 @@ function Portfolio() {
                         <Col xs={24}>
                             <Tooltip placement="right" title={textIconGitHub}>
                                 <a href="https://github.com/ValentinDft/sneakersApp_React-Native" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
+                            </Tooltip>
+                        </Col>
+                    </Row>
+                </Col>
+
+                <Col xs={24} md={11} lg={11} xl={11} className="card-portfolio grp2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="600">
+                    <div className="header-card-portfolio">
+                        <span className="btn-bullet" style={{backgroundColor:"#df7065"}}></span>
+                        <span className="btn-bullet" style={{backgroundColor:"#e6bb46"}}></span>
+                        <span className="btn-bullet" style={{backgroundColor:"#5bcc8b"}}></span>
+                        
+                        <span className="url-projet">
+                            
+                            <Tooltip placement="right" title="Soon">
+                                <a target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}>https://morning-news.valentinduffet.fr/</a>
+                            </Tooltip>
+                        </span>
+                    </div>
+                    <div style={{overflow: "hidden"}}>
+                    <img src={captureMorningNews} style={{width: "100%", borderBottomLeftRadius: "4px", borderBottomRightRadius: "4px"}} className="img-portfolio" alt="logoMovieCollection"></img>
+                    </div>
+                    <h2 style={{marginTop: "15px", color: "white", fontFamily: 'Nerko One'}}>Morning News</h2>
+                    <h3 style={{fontSize: "15px", marginTop: "15px", color: "#bdc3c7", padding:"0px 20px", textAlign: "justify"}}>
+                        Web app dévelopée avec le framework Next.js. Collection de plusieurs journaux et articles, pour avoir les actualités les plus récentes condensées sur une seule plateforme. Récupération des données depuis News API.
+                    </h3>
+                    <Tag style={{marginTop: "15px"}}> 
+                        Next.js 
+                    </Tag>
+                    {/* <Tag>
+                        Redux
+                    </Tag> */}
+                    <Tag>
+                        Styled Component
+                    </Tag>
+                    <Tag>
+                        News API
+                    </Tag>
+                    <Row style={{marginTop: "45px"}}>
+                        <Col xs={24}>
+                            <Tooltip placement="right" title={textIconGitHub}>
+                                <a href="https://github.com/ValentinDft/Morning-News" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{fontSize: "25px", color: "white"}}></FontAwesomeIcon></a>
                             </Tooltip>
                         </Col>
                     </Row>
