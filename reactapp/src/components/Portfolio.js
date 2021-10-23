@@ -50,7 +50,7 @@ function Portfolio() {
                         <span className="url-projet">
                             
                             <Tooltip placement="top" title={textIconSite}>
-                                <a href="https://massageshaktiardeche.fr/" target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}> https://massageshaktiardeche.fr/</a>
+                                <a href="http://massage-ayurardeche.fr/" target="_blank" rel="noopener noreferrer" style={{color: "black", textDecoration: "none"}}> http://massage-ayurardeche.fr/</a>
                             </Tooltip>
                         </span>
                     </div>
